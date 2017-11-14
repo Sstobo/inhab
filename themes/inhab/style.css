@@ -679,11 +679,15 @@ h1 {
 h3 {
   color: grey; }
 
-/* Front page */
-.site-main-front-page {
+/* ******** Front page */
+.frontpage-hero {
   background-image: url("../../images/home-hero.jpg");
   background-size: cover;
-  height: 700px; }
+  height: 700px;
+  display: block; }
+
+.site-main-front-page h2.entry-title {
+  display: none; }
 
 .site-header {
   height: 70px;
@@ -705,7 +709,6 @@ h3 {
   background-size: 100% 100%; }
 
 .main-navigation {
-  width: 1120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -717,43 +720,36 @@ h3 {
       -ms-flex-pack: end;
           justify-content: flex-end;
   height: 100%; }
-
-.main-navigation a {
-  text-decoration: none;
-  color: #248A83;
-  font-size: 20px;
-  padding: 15px;
-  padding-top: 18px; }
-
-h2.entry-title {
-  display: none; }
-
-nav i {
-  padding: 10px;
-  height: 40px;
-  color: #248A83;
-  position: relative;
-  bottom: 18px;
-  right: 10px; }
+  .main-navigation a {
+    text-decoration: none;
+    color: #248A83;
+    font-size: 20px;
+    padding: 15px;
+    padding-top: 18px; }
+  .main-navigation h2.entry-title {
+    display: none; }
+  .main-navigation i {
+    padding: 10px;
+    height: 40px;
+    color: #248A83;
+    position: relative;
+    bottom: 18px;
+    right: 10px; }
 
 footer {
   height: 385px;
   background-image: url("../../images/dark-wood@2x.png"); }
-
-footer p {
-  color: white; }
-
-footer h2 {
-  color: #d99054; }
-
-footer i {
-  padding: 5px;
-  color: white;
-  height: 20px;
-  width: auto; }
-
-footer a {
-  color: white; }
+  footer p {
+    color: white; }
+  footer h2 {
+    color: #d99054; }
+  footer i {
+    padding: 5px;
+    color: white;
+    height: 20px;
+    width: auto; }
+  footer a {
+    color: white; }
 
 .footer-container {
   width: 1120px;

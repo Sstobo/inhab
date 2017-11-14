@@ -8,14 +8,17 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main-front-page" role="main">
+	
+		<div class="frontpage-hero"></div>
 
+			<main id="main" class="site-main-front-page" role="main">
+	
 		<?php if ( have_posts() ) : ?>
-
-			<?php if ( is_home() && ! is_front_page() ) : ?>
+		<?php if ( is_home() && ! is_front_page() ) : ?>
+			
 				<header>
 
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?>
+					<h1 class="front-page screen-reader-text"><?php single_post_title(); ?>
 
 				</header>
 			<?php endif; ?>
