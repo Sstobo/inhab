@@ -7,10 +7,10 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="about-content-area">
     <div class="about-photo"></div>
   
-    <main id="main" class="site-main site-about" role="main">
+    <main id="main" class="site-about" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 

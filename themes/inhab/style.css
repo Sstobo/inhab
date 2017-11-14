@@ -677,7 +677,11 @@ h1 {
   line-height: 1.75; }
 
 h3 {
+  font-family: 'Merriweather', serif;
   color: grey; }
+
+h1.entry-title {
+  display: none; }
 
 /* ******** Front page */
 .frontpage-hero {
@@ -788,11 +792,11 @@ footer {
   background-image: url("../../images/about-hero.jpg");
   background-size: 100% 100%; }
 
-.site-about b {
+.site-about .p3 {
   font-size: 33px;
   text-transform: uppercase; }
 
-.contact-container {
+.site-content-contact {
   width: 1120px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -802,9 +806,15 @@ footer {
       -ms-flex-direction: columns;
           flex-direction: columns;
   padding-top: 70px; }
+  .site-content-contact .entry-content {
+    text-align: left;
+    width: 910px; }
+    .site-content-contact .entry-content p {
+      width: 600px; }
 
 .sidebar-container {
-  width: 200px;
+  width: 300px;
+  min-width: 300px;
   padding-left: 20px;
   border-left: 1px solid grey;
   display: block; }
@@ -823,57 +833,28 @@ footer {
 aside.widget_archive {
   display: block; }
 
-.site-main {
-  width: 1120px;
-  margin: 0 auto; }
-
-.entry-content {
-  text-align: center;
-  width: 800px;
-  margin: 0 auto; }
-
-h1.entry-title {
-  display: none; }
-
-.content-journal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 1020px; }
-
-.content-main {
-  width: 600px; }
-
-.entry-header {
+.blog .entry-header {
   position: relative; }
-  .entry-header img {
+  .blog .entry-header img {
     padding-left: 100px;
     width: 860px; }
-  .entry-header h2 {
+  .blog .entry-header h2 {
     width: 400px;
     background-color: #248A83;
     font-size: 33.6px;
-    display: inline;
     position: absolute;
     top: 10px;
     left: 100px;
     padding: 10px; }
-    .entry-header h2 a {
+    .blog .entry-header h2 a {
       color: white;
       text-decoration: none; }
 
-.entry-content p {
+.blog .entry-content p {
   color: black;
   position: relative;
-  left: 50px; }
-
-.entry-content .p4 {
-  left: 0;
-  padding: 10px; }
+  width: 700px;
+  margin: 0 auto; }
 
 .blog .entry-meta {
   background-color: #248A83;
@@ -894,3 +875,6 @@ h1.entry-title {
 
 .blog .site-main {
   width: 910px; }
+
+.blog .site-content {
+  width: 1120px; }

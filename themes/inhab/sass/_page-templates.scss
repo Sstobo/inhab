@@ -13,7 +13,11 @@ h1 {
   line-height: 1.75;
 }
 h3 {
+  font-family: 'Merriweather', serif;
   color: grey;
+}
+h1.entry-title {
+  display: none;
 }
 /* ******** Front page */
   .frontpage-hero {
@@ -127,28 +131,38 @@ h3 {
       text-align: center;
     }
 
-// about
+// ************ About
   .about-photo {
       height: 965px;
       background-image: url("../../images/about-hero.jpg");
       background-size: 100% 100%;
   }
-  .site-about b {
+  .site-about .p3 {
     font-size: 33px;
     text-transform: uppercase;
   }
 
-// contact page
-    .contact-container {
-      width: 1120px;
+// ************ Contact page
+    .site-content-contact{
+      width: 1120px;  
       display: flex;
       flex-direction: columns;
       padding-top: 70px;
+      // Content from WP
+          .entry-content {
+            text-align: left;
+            width: 910px;
+            p {
+              width: 600px;
+            }
+          }
     }
-// sidebar
+    
+// ********* Sidebar
    // Primary sidebar container
   .sidebar-container {
-    width: 200px;
+    width: 300px;
+    min-width: 300px;
     padding-left: 20px;
     border-left: 1px solid grey;
     display: block;
@@ -168,85 +182,74 @@ h3 {
       padding: 10px;
     }
   } 
+  // Archive 
    aside.widget_archive {
       display: block;
-
    }
   
   
    
-// general css 
-  .site-main {
-    width: 1120px;
-    margin: 0 auto;
-  }
-  .entry-content {
-    text-align: center;
-    width: 800px;
-    margin: 0 auto;
-  }
-  h1.entry-title {
-    display: none;
-  }
-// journal 
-  .content-journal {
-    display: flex;
-    flex-direction: column;
-    width: 1020px;
-  }
-  .content-main {
-    width: 600px;
-  }
-  .entry-header {
-    position: relative;
-    img {
-      padding-left: 100px;
-      width: 860px;
+
+  
+  
+// ************ Journal
+
+  // Text above feature image
+  
+  .blog {
+      .entry-header {
+        position: relative;
+            img {
+              padding-left: 100px;
+              width: 860px;
+            }
+            h2 { 
+              width: 400px;
+              background-color: #248A83;
+              font-size: 33.6px;
+              position: absolute;
+              top: 10px;
+              left: 100px;
+              padding: 10px;
+                a {
+                  color: white;
+                  text-decoration: none;
+                }
+              }
+            }
+            // Blog content    
+        .entry-content p {
+          color: black;
+          position: relative;
+          width: 700px;
+          margin: 0 auto;
     }
-    h2 { 
-      width: 400px;
-      background-color: #248A83;
-      font-size: 33.6px;
-      display: inline;
-      position: absolute;
-      top: 10px;
-      left: 100px;
-      padding: 10px;
-      a {
-        color: white;
-        text-decoration: none;
-      }
-      }
-    }
-    .entry-content p {
-      color: black;
-      position: relative;
-      left: 50px;
-    }
-    .entry-content .p4 {
-      left: 0;
-      padding: 10px;
-    }
+   }
+    
+    // Generated container name
     .blog {
-    .entry-meta {
-      background-color: #248A83;
-      position: relative;
-      width: 400px;
-      left: 460px;
-      bottom: 37px;
-      color: white;
-      padding: 3px;
-    }
-    .site-content {
-      display: flex;
-      padding-top: 70px;
-      p {
-        text-align: left;
-        // padding: 0 0 15px 20px;
+        // Date info
+      .entry-meta {
+        background-color: #248A83;
+        position: relative;
+        width: 400px;
+        left: 460px;
+        bottom: 37px;
+        color: white;
+        padding: 3px;
       }
-    }
+      .site-content {
+        display: flex;
+        padding-top: 70px;
+        p {
+          text-align: left;
+        }
+      } 
       .site-main {
         width: 910px;
       }
-    }
-  
+  .site-content {
+    width: 1120px;
+  }}
+    // Content wrapper
+        
