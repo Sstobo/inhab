@@ -665,6 +665,20 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+p {
+  color: #404040;
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  line-height: 1.75; }
+
+h1 {
+  color: #404040;
+  font-family: 'Merriweather', serif;
+  line-height: 1.75; }
+
+h3 {
+  color: grey; }
+
 /* Front page */
 .site-main-front-page {
   background-image: url("../../images/home-hero.jpg");
@@ -672,16 +686,21 @@ object {
   height: 700px; }
 
 .site-header {
-  height: 90px;
+  height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  left: 150px; }
+  width: 100vw;
+  opacity: .9;
+  border-bottom: 1px solid #e1e1e1;
+  background-color: white;
+  padding-left: 100px;
+  z-index: 999; }
 
 .header-logo {
-  height: 90px;
-  width: 90px;
+  height: 70px;
+  width: 70px;
   background-image: url("../../images/logos/inhabitent-logo-tent-white.svg");
   background-size: 100% 100%; }
 
@@ -697,15 +716,14 @@ object {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  border: 2px solid red;
   height: 100%; }
 
 .main-navigation a {
   text-decoration: none;
-  color: white;
+  color: #248A83;
   font-size: 20px;
   padding: 15px;
-  padding-top: 35px; }
+  padding-top: 18px; }
 
 h2.entry-title {
   display: none; }
@@ -713,11 +731,29 @@ h2.entry-title {
 nav i {
   padding: 10px;
   height: 40px;
-  color: white; }
+  color: #248A83;
+  position: relative;
+  bottom: 18px;
+  right: 10px; }
 
 footer {
   height: 385px;
   background-image: url("../../images/dark-wood@2x.png"); }
+
+footer p {
+  color: white; }
+
+footer h2 {
+  color: #d99054; }
+
+footer i {
+  padding: 5px;
+  color: white;
+  height: 20px;
+  width: auto; }
+
+footer a {
+  color: white; }
 
 .footer-container {
   width: 1120px;
@@ -737,7 +773,6 @@ footer {
 .footer-block {
   height: 220px;
   width: 280px;
-  border: 2px solid white;
   display: block;
   margin: 0 auto; }
 
@@ -745,7 +780,7 @@ footer {
   width: 560px; }
 
 .footer-logo {
-  height: 100px;
+  height: 70px;
   background-image: url("../../images/logos/inhabitent-logo-text.svg");
   background-size: 100% 100%; }
 
@@ -756,6 +791,44 @@ footer {
   height: 965px;
   background-image: url("../../images/about-hero.jpg");
   background-size: 100% 100%; }
+
+.site-about b {
+  font-size: 33px;
+  text-transform: uppercase; }
+
+.contact-container {
+  width: 1120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: columns;
+          flex-direction: columns;
+  padding-top: 70px; }
+
+.sidebar p h2 {
+  color: black; }
+
+.sidebar-container i {
+  font-size: 30px;
+  padding: 10px; }
+
+.sidebar-container a {
+  color: #248A83; }
+
+.widget-area {
+  width: 500px;
+  padding-left: 20px;
+  border-left: 1px solid grey; }
+  .widget-area a {
+    color: #248A83;
+    text-decoration: none; }
+  .widget-area li {
+    list-style: none; }
+  .widget-area ul {
+    position: relative;
+    right: 90px; }
 
 .site-main {
   width: 1120px;
@@ -768,3 +841,63 @@ footer {
 
 h1.entry-title {
   display: none; }
+
+.content-journal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1020px; }
+
+.content-main {
+  width: 600px; }
+
+.entry-header {
+  position: relative; }
+  .entry-header img {
+    padding-left: 100px;
+    width: 860px; }
+  .entry-header h2 {
+    width: 400px;
+    background-color: #248A83;
+    font-size: 33.6px;
+    display: inline;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    padding: 10px; }
+    .entry-header h2 a {
+      color: white;
+      text-decoration: none; }
+
+.entry-content p {
+  color: black;
+  position: relative;
+  left: 50px; }
+
+.entry-content .p4 {
+  left: 0;
+  padding: 10px; }
+
+.blog .entry-meta {
+  background-color: #248A83;
+  position: relative;
+  width: 400px;
+  left: 460px;
+  bottom: 37px;
+  color: white;
+  padding: 3px; }
+
+.blog .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 70px; }
+  .blog .site-content p {
+    text-align: left; }
+
+.blog .site-main {
+  width: 910px; }

@@ -10,14 +10,13 @@ get_header(); ?>
 	<div id="primary" class="content-area">
     <div class="about-photo"></div>
   
-    <main id="main" class="site-main" role="main">
+    <main id="main" class="site-main site-about" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 			<?php endwhile; // End of the loop. ?>
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
