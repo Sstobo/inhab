@@ -803,28 +803,25 @@ footer {
           flex-direction: columns;
   padding-top: 70px; }
 
-.sidebar p h2 {
-  color: black; }
-
-.sidebar-container i {
-  font-size: 30px;
-  padding: 10px; }
-
-.sidebar-container a {
-  color: #248A83; }
-
-.widget-area {
-  width: 500px;
+.sidebar-container {
+  width: 200px;
   padding-left: 20px;
-  border-left: 1px solid grey; }
-  .widget-area a {
+  border-left: 1px solid grey;
+  display: block; }
+  .sidebar-container a {
     color: #248A83;
     text-decoration: none; }
-  .widget-area li {
+  .sidebar-container li {
     list-style: none; }
-  .widget-area ul {
+  .sidebar-container ul {
     position: relative;
     right: 90px; }
+  .sidebar-container i {
+    font-size: 30px;
+    padding: 10px; }
+
+aside.widget_archive {
+  display: block; }
 
 .site-main {
   width: 1120px;
