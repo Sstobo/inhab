@@ -29,7 +29,7 @@ get_header();
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content' ); ?>
-
+				<a href="<?php the_permalink(); ?>" class="button">Read More<span class="dashicons dashicons-arrow-right-alt next-arrow"></span></a>
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>

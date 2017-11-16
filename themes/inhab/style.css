@@ -667,48 +667,59 @@ object {
 --------------------------------------------------------------*/
 p {
   color: #404040;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-size: 16px;
   line-height: 1.75; }
 
 h1 {
   color: #404040;
   font-family: 'Merriweather', serif;
-  line-height: 1.75; }
+  line-height: 1.75;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 30px; }
 
 h3 {
   font-family: 'Merriweather', serif;
-  color: grey; }
+  color: white;
+  font-size: 18px;
+  padding-bottom: 20px; }
 
 h1.entry-title {
   display: none; }
 
-/* ******** Front page */
+/* ******** FRONT PAGE */
 .frontpage-hero {
-  background-image: url("../../images/home-hero.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.15))), url("../../images/home-hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.15)), url("../../images/home-hero.jpg");
   background-size: cover;
-  height: 700px;
-  display: block; }
+  height: 100vh;
+  display: block;
+  position: relative;
+  text-align: center; }
+  .frontpage-hero img {
+    position: relative;
+    top: 220px; }
 
 .site-main-front-page h2.entry-title {
   display: none; }
 
 .site-header {
-  height: 70px;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: fixed;
   width: 100vw;
   opacity: .9;
-  border-bottom: 1px solid #e1e1e1;
-  background-color: white;
+  border-bottom: 1px solid #a1a1a1;
+  background-color: #ffffff;
   padding-left: 100px;
   z-index: 999; }
 
 .header-logo {
-  height: 70px;
-  width: 70px;
+  height: 50px;
+  width: 50px;
   background-image: url("../../images/logos/inhabitent-logo-tent-white.svg");
   background-size: 100% 100%; }
 
@@ -728,32 +739,36 @@ h1.entry-title {
     text-decoration: none;
     color: #248A83;
     font-size: 20px;
-    padding: 15px;
-    padding-top: 18px; }
+    padding-left: 35px;
+    padding-top: 12px;
+    position: relative;
+    right: 60px;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase; }
   .main-navigation h2.entry-title {
     display: none; }
   .main-navigation i {
-    padding: 10px;
-    height: 40px;
+    font-size: 18px;
     color: #248A83;
     position: relative;
-    bottom: 18px;
-    right: 10px; }
+    bottom: 29px;
+    right: 40px; }
 
 footer {
   height: 385px;
   background-image: url("../../images/dark-wood@2x.png"); }
   footer p {
-    color: white; }
+    color: #ffffff; }
   footer h2 {
     color: #d99054; }
   footer i {
     padding: 5px;
-    color: white;
+    color: #ffffff;
     height: 20px;
     width: auto; }
   footer a {
-    color: white; }
+    color: #ffffff; }
 
 .footer-container {
   width: 1120px;
@@ -787,14 +802,17 @@ footer {
 .site-info {
   text-align: center; }
 
-.about-photo {
-  height: 965px;
-  background-image: url("../../images/about-hero.jpg");
-  background-size: 100% 100%; }
-
-.site-about .p3 {
-  font-size: 33px;
-  text-transform: uppercase; }
+.site-about {
+  padding-top: 50px; }
+  .site-about h2 {
+    font-size: 33px;
+    text-transform: uppercase;
+    text-align: center; }
+  .site-about .about-container {
+    width: 600px;
+    margin: 0 auto; }
+  .site-about .about-hero {
+    height: 100vh; }
 
 .site-content-contact {
   width: 1120px;
@@ -805,7 +823,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: columns;
           flex-direction: columns;
-  padding-top: 70px; }
+  padding-top: 50px; }
   .site-content-contact .entry-content {
     text-align: left;
     width: 910px; }
@@ -816,7 +834,7 @@ footer {
   width: 300px;
   min-width: 300px;
   padding-left: 20px;
-  border-left: 1px solid grey;
+  border-left: 1px solid #a1a1a1;
   display: block; }
   .sidebar-container a {
     color: #248A83;
@@ -832,6 +850,21 @@ footer {
 
 aside.widget_archive {
   display: block; }
+
+.blog a.button {
+  color: black;
+  border: 1px solid black;
+  padding: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  left: 100px;
+  bottom: 60px; }
+
+.blog a.button:hover {
+  color: white;
+  border: none;
+  background-color: #248A83; }
 
 .blog .entry-header {
   position: relative; }
@@ -854,7 +887,10 @@ aside.widget_archive {
   color: black;
   position: relative;
   width: 700px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-bottom: 80px;
+  bottom: 35px;
+  font-family: "Merriweather", serif; }
 
 .blog .entry-meta {
   background-color: #248A83;
@@ -869,7 +905,7 @@ aside.widget_archive {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 70px; }
+  padding-top: 50px; }
   .blog .site-content p {
     text-align: left; }
 
@@ -878,3 +914,126 @@ aside.widget_archive {
 
 .blog .site-content {
   width: 1120px; }
+
+.product-info {
+  width: 100vw;
+  height: 265px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .product-info .product-type-blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .product-info .product-type-block-wrapper:hover {
+    border: 1px solid #d99054;
+    border-top: 5px solid #d99054; }
+  .product-info .product-type-block-wrapper {
+    margin: 12px;
+    height: 265px;
+    width: 265px;
+    background-color: white;
+    border: 1px solid #a1a1a1;
+    border-top: 5px solid #a1a1a1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center; }
+    .product-info .product-type-block-wrapper img {
+      margin: 0 auto;
+      height: 70px;
+      width: 70px;
+      padding-top: 10px; }
+    .product-info .product-type-block-wrapper a.btn {
+      text-transform: uppercase;
+      color: white;
+      background-color: #248A83;
+      width: 100px;
+      height: 50px;
+      padding: 12px 24px 12px 24px;
+      text-decoration: none;
+      font-size: 14px; }
+    .product-info .product-type-block-wrapper a.btn:hover {
+      background-color: #19625d; }
+    .product-info .product-type-block-wrapper p {
+      padding: 0 10px 0 10px; }
+
+.journal-container {
+  width: 100vw;
+  height: 500px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .journal-container a {
+    font: "Merriweather", serif;
+    color: #248A83;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    position: relative;
+    bottom: 18px;
+    left: 8px;
+    margin: auto auto;
+    text-transform: uppercase; }
+  .journal-container p {
+    font-size: 12px;
+    padding-left: 10px; }
+  .journal-container .journal-block {
+    height: 400px;
+    width: 365px;
+    margin: 20px; }
+    .journal-container .journal-block .content-block {
+      height: 170px;
+      border: 1px solid #a1a1a1;
+      position: relative; }
+      .journal-container .journal-block .content-block .button {
+        width: 140px;
+        height: 50px;
+        border: 1px solid black;
+        background-color: white;
+        color: black;
+        font-size: 14px;
+        position: absolute;
+        bottom: 8px;
+        left: 8px;
+        padding: 10px;
+        text-align: center; }
+      .journal-container .journal-block .content-block .button:hover {
+        background-color: #248A83;
+        color: white;
+        border: none; }
+    .journal-container .journal-block img {
+      height: 250px;
+      width: 365px; }

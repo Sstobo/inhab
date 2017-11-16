@@ -36,7 +36,7 @@
 				
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					<h1><i class="fa fa-search" aria-hidden="true"></i></h1>
+					
 				</nav><!-- #site-navigation -->
 
 			</header><!-- #masthead -->

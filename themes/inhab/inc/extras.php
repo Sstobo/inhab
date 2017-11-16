@@ -21,6 +21,7 @@ function red_starter_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
 
+
 function inhabitent_login_logo() {
 	
 	echo '<style type="text/css">                                                                   
@@ -36,3 +37,31 @@ function the_login_url( $url ) {
 	return get_bloginfo( 'url' );
 }
 add_filter( 'login_headerurl', 'the_login_url' );
+
+
+
+function inhab_dynamic_css() {
+	if ( ! is_page_template( 'about.php')) {
+		return;
+	}
+
+	$image = CFS()->get('about_header_image') ;
+
+	if (! $image) {
+		return;
+	}
+
+	$hero_css = ".about-content-area .about-hero {
+		background:
+			linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
+			url({$image}) no-repeat center bottom;
+			background-size: cover, cover;
+			height: 100vh;
+			background-color: magenta;
+	}";
+
+	wp_add_inline_style( 'tent-style', $hero_css );
+}
+ add_action( 'wp_enqueue_scripts', 'inhab_dynamic_css' );
+		
+	

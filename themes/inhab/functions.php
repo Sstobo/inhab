@@ -87,7 +87,8 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
 
 function red_starter_scripts() {
 
-
+	wp_enqueue_style( 'tent-style', get_stylesheet_uri() );
+	
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'font-awesome-cdn', 'https://use.fontawesome.com/a427d4b0dc.js', array(),'4.7',true);
