@@ -1037,3 +1037,33 @@ aside.widget_archive {
     .journal-container .journal-block img {
       height: 250px;
       width: 365px; }
+
+.products-content-area {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .products-content-area .products-site-main {
+    width: 1120px;
+    margin: 0 auto;
+    background-color: pink; }
+  .products-content-area .product-block-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .products-content-area .product-block {
+    height: 300px;
+    width: 250px;
+    background-color: goldenrod;
+    margin: 10px;
+    display: block; }

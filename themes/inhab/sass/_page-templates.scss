@@ -419,3 +419,30 @@
       }
     }
   }
+
+
+// PRODUCTS ARCHIVE
+
+  .products-content-area {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    
+    .products-site-main {
+      width: 1120px;
+      margin: 0 auto;
+      background-color: pink;
+    }
+    .product-block-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .product-block {
+      height: 300px;
+      width: 250px;
+      background-color: goldenrod;
+      margin: 10px;
+      display: block;
+    }
+  }
