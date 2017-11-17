@@ -7,26 +7,34 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div id="primary" class="single-content-area">
+		<main id="main" class="single-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
+		
+		<div class="single-product">
+			<?php the_post_thumbnail(); ?>
+		</div>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+		<div class="single-info">
+		<p class="single-title"><?php the_title()  ?> </p><span class="price-meta"><?php 
+      $meta_print_value=get_post_meta(get_the_ID(),'price',true);
+      echo($meta_print_value);
+?></span>
+<div class="single-content"> <?php the_content(); ?> </div>
+<div class="single-links">
+<a href="#"><span class="dashicons dashicons-facebook-alt"></span>like</a>
+<a href="#"><span class="dashicons dashicons-twitter"></span>tweet</a>
+<a href="#"><span class="dashicons dashicons-location"></span>pin</a>
+</div>
+			</div>
+		
 
-			<?php the_post_navigation(); ?>
-
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
 
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

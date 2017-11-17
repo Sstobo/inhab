@@ -11,11 +11,12 @@ get_header(); ?>
       <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <header class="entry-header about-hero">
           <div class="about-container">
-            <?php the_title( '<h1 class="entry-title">', '</h1>'); ?>
+        <h2 class="about-title" > <?php the_title( ); ?> </h2>
           </div>
         </header>
 
         <div class="about-container">
+    
         <div class="entry-content">
           <h2> Our Story </h2>
             <?php echo CFS()->get( 'about_our_story'); ?>

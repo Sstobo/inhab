@@ -13,10 +13,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
+			<h1> Shop Stuff </h1>
 			</header><!-- .page-header -->
 
 			<?php endif; ?>
@@ -27,17 +24,25 @@ get_header(); ?>
 		
 				global $post;
 				$args = array( 'posts_per_page' => 16,'post_type' => 'product', 'order' => 'ASC' ); 
-		
+
 				$posts = get_posts( $args );
 				foreach ( $posts as $post ) : setup_postdata( $post ); ?>
+			
+	
 					
+				
 						<div class="product-block-wrapper">
-						<div class="product-block">
-						<?php the_post_thumbnail( 'medium'); ?>
-						<div class="content-block">
-							<p><?php the_date(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></p>
-							<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></br>
-							<a href="<?php the_permalink(); ?>" class="button">Read More</a>
+									
+									<div class="product-block">
+									<a href="<?php the_permalink(); ?>">	<?php the_post_thumbnail( 'medium'); ?></a></br>
+								
+									<div class="content-block"><p class="archive-dots">.....................................</p>
+									<span class="archive-item"><?php the_title()  ?> </span><span class="price-meta"> <?php 
+											$meta_print_value=get_post_meta(get_the_ID(),'price',true);
+											echo($meta_print_value);
+								?></span>
+						
+						
 						</div>
 					</div>
 </div>

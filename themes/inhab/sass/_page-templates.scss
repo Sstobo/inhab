@@ -12,20 +12,33 @@
   }
   h1 {
     color: $font-color;
-    font-family: 'Merriweather', serif;
+    font-family: 'Novocento', sans-serif;
     line-height: 1.75;
     text-align: center;
     text-transform: uppercase;
     padding-top: 30px;
   }
+  h2 {
+     font-family: 'Novocento', sans-serif;
+     text-transform: uppercase;
+     font-size: 19px;
+  }
+  span {
+    font-family: $font-main;
+  }
   h3 {
-    font-family: 'Merriweather', serif;
+    font-family: 'Novocento', sans-serif;
     color: white;
-    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 16px;
     padding-bottom: 20px;
   }
   h1.entry-title {
     display: none;
+  }
+  .bold {
+    font-weight: bold;
   }
 /* ******** FRONT PAGE */
     .frontpage-hero {
@@ -52,7 +65,7 @@
   }
 
 
-// ************ Header 
+// ************ HEADER 
 
   // Main bar parent <header>
   .site-header {
@@ -104,10 +117,12 @@
     }
   
 
-// ************* Footer
-    footer {
-        height: 385px;
-        background-image:url("../../images/dark-wood@2x.png");
+// ************* FOOTER
+    body {
+      min-width: 1120px;
+    }    
+footer {
+        height: 350px;    
     p {
       color: $white;
           }
@@ -126,92 +141,151 @@
         }
   // Footer container line 14
     .footer-container {
-      width: 1120px;
+      background-image:url("../../images/dark-wood@2x.png");
+      min-width: 1120px;
       margin: 0 auto;
       display: flex;
+      flex-wrap: wrap;
       flex-direction: row;
-      height: 344px;
+      padding-left: 60px;
+      padding-right: 60px;
+      height: 350px;
       align-items: center;
     }
   // Block propertys line 16,22,28.
     .footer-block {
-      height: 220px;
-      width: 280px;
+      height: 180px;
+      width: 270px;
       display: block;
       margin: 0 auto;
+      position: relative;
+      top: 40px;
+      line-height: 28px;
+    
     }
     .footer-block:nth-child(3) {
       width: 560px;
     }
     // Logo inside block 3 line 29
     .footer-logo {
-      height: 70px;
+      height: 40px;
       background-image: url("../../images/logos/inhabitent-logo-text.svg");
       background-size: 100% 100%;
     }
     // Copyright info
     .site-info {
       text-align: center;
+      margin: 0 auto;
+      position: relative;
+      top: 40px;
 
     }
 
-// ************ About
+// ************ ABOUT
   .site-about {
-    padding-top: 50px;
+    padding-top: 20px;
      h2 {
       font-size: 33px;
       text-transform: uppercase;
       text-align: center;
     } 
     .about-container {
-      width: 600px;
+      width: 800px;
       margin: 0 auto;
+      padding-top: 30px;
+      padding-bottom: 30px;
     }
     .about-hero {
       height: 100vh;
     }
+    .about-title {
+      color: white;
+      text-transform: uppercase;
+      position: relative;
+      top: 300px;
+      font-size: 48px;
+
+    }
    
  }
 
-// ************ Contact page
+// ************ CONTACT 
+  .primary-contact {
+  width: 1120px;  
+    }
     .site-content-contact{
-      width: 1120px;  
       display: flex;
       flex-direction: columns;
       padding-top: 50px;
-      // Content from WP
-          .entry-content {
-            text-align: left;
-            width: 910px;
-            p {
-              width: 600px;
-            }
+      margin-bottom: 60px;
+      // Content from W
+          #wpgmza_map {
+            margin-bottom: 30px;
           }
+          input {
+            background-color: $light-grey;
+            border-radius: 0px;
+            border: 1px solid $medium-grey;
+          }
+          textarea {
+            background-color: $light-grey;
+            border-radius: 0px;
+            border: 1px solid $medium-grey;
+          }
+          .wpcf7-submit {
+            background-color: $green;
+            color: white;
+            text-shadow: none;
+            box-shadow: none;
+            text-transform: uppercase;
+            padding: 12px 24px 12px 24px; 
+          }
+          .wpcf7-submit:hover  {
+            background-color: $hovergreen;
+            color: white;
+            text-shadow: none;
+            box-shadow: none;
+            text-transform: uppercase;
+          }
+              .contact-container {
+                text-align: left;
+                min-width: 910px;  
+                h2.title {
+                  text-transform: uppercase;
+                  margin-left: 100px;
+                }
+                  .entry-content {
+                    width: 710px;
+                    margin: 0 auto;
+                  }    
+              }
     }
     
-// ********* Sidebar
+// ********* SIDEBAR
    // Primary sidebar container
   .sidebar-container {
+    text-align: start;
     width: 300px;
     min-width: 300px;
-    padding-left: 20px;
+    padding-left: 30px;
     border-left: 1px solid $light-grey;
     display: block;
-    a {
-      color: $green;
-      text-decoration: none;
-    }
-    li {
-      list-style: none;
-    }
-    ul {
-      position: relative;
-      right: 90px;
-    } 
-    i {
-      font-size: 30px;
-      padding: 10px;
-    }
+        a {
+          color: $green;
+          text-decoration: none;
+        }
+        li {
+          list-style: none;
+        }
+        ul {
+          position: relative;
+          right: 90px;
+        } 
+        .dashicons {
+          font-size: 20px;
+          margin-right: 20px;
+          
+        }
   } 
   // Archive 
    aside.widget_archive {
@@ -223,7 +297,7 @@
 
   
   
-// ************ Journal   
+// ************ JOURNAL  
 
   // Text above feature image
   
@@ -421,7 +495,7 @@
   }
 
 
-// PRODUCTS ARCHIVE
+// ************* PRODUCTS ARCHIVE
 
   .products-content-area {
     padding-top: 50px;
@@ -431,7 +505,7 @@
     .products-site-main {
       width: 1120px;
       margin: 0 auto;
-      background-color: pink;
+    
     }
     .product-block-wrapper {
       display: flex;
@@ -441,8 +515,85 @@
     .product-block {
       height: 300px;
       width: 250px;
-      background-color: goldenrod;
       margin: 10px;
       display: block;
+          img {
+              height: 200px;
+          }
+          .content-block {
+            height: 55px;
+            font-size: 14px;
+            border: 1px solid $light-grey;
+            border-top: 4px solid $light-grey;
+            padding-left: 12px;
+            position: relative;
+            bottom: 8px;
+          }
+          .price-meta {
+            position: relative;
+            left:80px;
+            bottom: 50px;
+            background: white;
+          }
+          .archive-dots {
+            z-index: -1;
+          }
+          .archive-item {
+            position: relative;
+            background: white;
+            bottom: 50px;
+          }
+        
     }
   }
+
+  // SINGLE PRODUCT PAGE
+  .single-content-area {
+    padding-top: 50px;
+  }  
+  .single-main {
+      width: 1120px;
+      display: flex;
+      flex-direction: row;
+      margin: 0 auto;
+      justify-content: space-between;
+
+        .single-product {
+          width: 530px;
+          padding-top: 50px;
+          display: block;
+        }
+        .single-info{
+          
+          width: 530px;
+          display: block;
+        }
+        .single-title {
+          color: $orange;
+          text-transform: uppercase;
+          font-size: 38px;
+        }
+        .price-meta {
+          font-size: 28px;
+        }
+        .single-links {
+          margin-bottom: 150px;
+        }
+        a {
+          font-size: 12px;
+          padding: 12px 24px;
+          border: 1px solid black;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: black; 
+        }
+        a:hover {
+          color: white;
+          background-color: $green;
+          border: none;
+        }
+        .dashicons {
+          margin-right: 10px;
+        }
+       
+    }
