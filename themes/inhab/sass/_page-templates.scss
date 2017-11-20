@@ -121,7 +121,7 @@
     body {
       min-width: 1120px;
     }    
-footer {
+  footer {
         height: 350px;    
     p {
       color: $white;
@@ -345,7 +345,7 @@ footer {
           width: 700px;
           margin: 0 auto;
           margin-bottom: 80px;
-          bottom: 35px;
+          bottom: 34px;
           font-family: $font-main;
     }
    }
@@ -358,7 +358,7 @@ footer {
         position: relative;
         width: 400px;
         left: 460px;
-        bottom: 37px;
+        bottom: 35px;
         color: white;
         padding: 3px;
       }
@@ -496,21 +496,47 @@ footer {
 
 
 // ************* PRODUCTS ARCHIVE
-
-  .products-content-area {
-    padding-top: 50px;
+.post-type-archive {
+  .content-area {
+    padding-top: 30px;
     display: flex;
     flex-direction: row;
-    
-    .products-site-main {
-      width: 1120px;
-      margin: 0 auto;
-    
-    }
+        .site-main {
+          width: 1120px;
+          margin: 0 auto;   
+        }
     .product-block-wrapper {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+    }
+    .product-block-wrapper-item {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      width: 1120px;
+      margin: 0 auto;
+      justify-content: space-between;
+    }
+    .link-blocks {
+      display: flex;
+      height: 100px;
+      width: 300px;
+      margin: 0 auto;
+      justify-content: space-between;
+            a {
+              font-family: 'Novocento', sans-serif;
+              font-size: 19px;
+              color: $green;
+              margin: 0 auto;
+              padding: 12px;
+              text-transform: uppercase;
+              text-decoration: none;
+            }
+            a:hover {
+              color: $hovergreen;
+            }
+
     }
     .product-block {
       height: 300px;
@@ -522,7 +548,7 @@ footer {
           }
           .content-block {
             height: 55px;
-            font-size: 14px;
+            font-size: 16px;
             border: 1px solid $light-grey;
             border-top: 4px solid $light-grey;
             padding-left: 12px;
@@ -531,7 +557,7 @@ footer {
           }
           .price-meta {
             position: relative;
-            left:80px;
+            left:50px;
             bottom: 50px;
             background: white;
           }
@@ -546,12 +572,12 @@ footer {
         
     }
   }
-
-  // SINGLE PRODUCT PAGE
-  .single-content-area {
-    padding-top: 50px;
-  }  
-  .single-main {
+}
+// SINGLE PRODUCT PAGE
+    .single-content-area {
+      padding-top: 50px;
+    }  
+    .single-main {
       width: 1120px;
       display: flex;
       flex-direction: row;
@@ -572,6 +598,7 @@ footer {
           color: $orange;
           text-transform: uppercase;
           font-size: 38px;
+          font-family: 'Novocento', sans-serif;
         }
         .price-meta {
           font-size: 28px;
@@ -597,3 +624,80 @@ footer {
         }
        
     }
+
+// TAXONOMY PRODUCT TYPE
+
+    .tax-product-type {
+      .content-area {
+        
+      }
+      .site-main {
+        width: 1120px;
+        margin: 0 auto;
+        padding-top: 50px;
+        display: block;
+        border-bottom: 1px solid $light-grey;
+      }
+      .link-wrapper {
+        display: flex;
+        height: 100px;
+        width: 300px;
+        margin: 0 auto;
+        justify-content: space-between;
+        flex-direction: row;
+        
+              a {
+                font-family: 'Novocento', sans-serif;
+                font-size: 19px;
+                color: $green;
+                margin: 0 auto;
+                padding: 12px;
+                text-transform: uppercase;
+                text-decoration: none;
+              }
+              a:hover {
+                color: $hovergreen;
+              }
+            }
+            .product-wrapper {
+              width: 1120px;
+              margin: 0 auto;
+              padding-top: 40px;
+              display: flex;
+              flex-direction: row;
+              .product-block {
+                height: 300px;
+                width: 250px;
+                margin: 10px;
+                display: block;
+                    img {
+                        height: 200px;
+                    }
+                    .content-block {
+                      height: 55px;
+                      font-size: 16px;
+                      border: 1px solid $light-grey;
+                      border-top: 4px solid $light-grey;
+                      padding: 0 12px 0 12px;
+                      position: relative;
+                      bottom: 8px;
+                      padding-top: 15px;
+                      display: flex;
+                      justify-content: space-between
+                    }
+                    .price-meta {
+                      position: relative;
+                      
+                      background: white;
+                    }
+                    .archive-dots {
+                      z-index: -1;
+                    }
+                    .archive-item {
+                      position: relative;
+                      background: white;
+                    
+                    }
+              }
+            }
+          }

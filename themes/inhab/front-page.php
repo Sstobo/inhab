@@ -94,7 +94,7 @@ wp_reset_postdata();?>
 			
 
 </div>
-
+<a href=index>   link to my site </a>
 
 
 
