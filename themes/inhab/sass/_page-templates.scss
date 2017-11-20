@@ -17,6 +17,8 @@
     text-align: center;
     text-transform: uppercase;
     padding-top: 30px;
+    font-size: 38px;
+    font-weight: 200;
   }
   h2 {
      font-family: 'Novocento', sans-serif;
@@ -496,7 +498,7 @@
 
 
 // ************* PRODUCTS ARCHIVE
-.post-type-archive {
+ .post-type-archive {
   .content-area {
     padding-top: 30px;
     display: flex;
@@ -536,7 +538,6 @@
             a:hover {
               color: $hovergreen;
             }
-
     }
     .product-block {
       height: 300px;
@@ -572,7 +573,7 @@
         
     }
   }
-}
+ }
 // SINGLE PRODUCT PAGE
     .single-content-area {
       padding-top: 50px;
@@ -701,3 +702,172 @@
               }
             }
           }
+
+// FRONT PAGE ADVENTURES
+      .home {
+      
+        .adventure-wrapper {
+          
+          height: 560px;
+          width: 1180px;
+          display: grid;
+          grid-template-areas: 
+          "main main one one"
+          "main main two three";
+          grid-template-rows: 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-gap: 20px 20px;
+          margin: 60px auto;
+        a {
+          font-family: $font-main;
+          text-decoration: none;
+          color: white;
+          text-transform: none;
+          text-align: left;
+        }
+        
+        .adventure-main {
+          grid-area: main;
+          display: flex;
+          flex-direction: column;
+          background-image: 
+          linear-gradient(
+            rgba(0, 0, 0, 0.25), 
+            rgba(0, 0, 0, 0.15)
+          ),url("../../images/adventure-photos/canoe-girl.jpg");
+          background-size: 150% 150%;
+          background-position: 50% 50%;  
+          padding: 50px 20px 0 30px;
+          a {
+            font-size: 48px;
+            font-weight: 100;
+          }         
+          a.button {
+            width: 120px;
+            font-family: 'Novocento', sans-serif;
+            text-decoration: none;
+            color: white;
+            border: 1px solid white;
+            padding: 12px 14px;
+            margin-top: 20px;
+            text-transform: none;
+            text-align: left;
+            font-size: 14px;
+            text-transform: uppercase;
+            text-align: center;
+          } 
+          a.button:hover {
+            background-color: $green;
+            border: none;
+          }
+        }
+        .adventure-one {
+          grid-area: one;
+          display: flex;
+          flex-direction: column;
+          background-image: 
+          linear-gradient(
+            rgba(0, 0, 0, 0.25), 
+            rgba(0, 0, 0, 0.15)
+          ),url("../../images/adventure-photos/beach-bonfire.jpg");
+          background-size: 150% 150%;
+          background-position: 50% 50%;
+          padding: 50px 20px 0 30px;
+          a {
+            font-size: 36px;
+            font-weight: 100;
+          } 
+          a.button {
+            width: 120px;
+            font-family: 'Novocento', sans-serif;
+            text-decoration: none;
+            color: white;
+            border: 1px solid white;
+            padding: 12px 14px;
+            margin-top: 20px;
+            text-transform: none;
+            text-align: left;
+            font-size: 14px;
+            text-transform: uppercase;
+            text-align: center;
+          } 
+          a.button:hover {
+            background-color: $green;
+            border: none;
+          
+          }
+        }
+        .adventure-two {
+          grid-area: two;
+          display: flex;
+          flex-direction: column;
+          background-image: 
+          linear-gradient(
+            rgba(0, 0, 0, 0.25), 
+            rgba(0, 0, 0, 0.15)
+          ),url("../../images/adventure-photos/mountain-hikers.jpg");
+          background-size: 200% 200%;
+          background-position: 50% 50%;
+          padding: 30px 20px 0 30px;
+          a {
+            font-size: 28px;
+            font-weight: 100;
+          } 
+          a.button {
+            width: 120px;
+            font-family: 'Novocento', sans-serif;
+            text-decoration: none;
+            color: white;
+            border: 1px solid white;
+            padding: 12px 14px;
+            margin-top: 20px;
+            text-transform: none;
+            text-align: left;
+            font-size: 14px;
+            text-transform: uppercase;
+            text-align: center;
+          } 
+          a.button:hover {
+            background-color: $green;
+            border: none;
+          
+          }
+        }
+        .adventure-three {
+          grid-area: three;
+          display: flex;
+          flex-direction: column;
+          background-image:  linear-gradient(
+            rgba(0, 0, 0, 0.25), 
+            rgba(0, 0, 0, 0.15)
+          ), url("../../images/adventure-photos/night-sky.jpg");
+          background-size: 180% 180%;
+          background-position: 50% 70%;
+          padding: 30px 10px 0 20px;
+           a {
+            font-size: 28px;
+            font-weight: 100;
+          } 
+          a.button {
+            width: 120px;
+            font-family: 'Novocento', sans-serif;
+            text-decoration: none;
+            color: white;
+            border: 1px solid white;
+            padding: 12px 14px;
+            margin-top: 20px;
+            text-transform: none;
+            text-align: left;
+            font-size: 14px;
+            text-transform: uppercase;
+            text-align: center;
+          } 
+          a.button:hover {
+            background-color: $green;
+            border: none;
+          }
+            
+          
+        }
+      }
+    }

@@ -74,10 +74,7 @@ get_header(); ?>
 
 		$posts = get_posts( $args );
 		foreach ( $posts as $post ) : setup_postdata( $post ); ?>
-			
-			
-			
-				
+							
 				<div class="journal-block">
 				<?php the_post_thumbnail( 'medium'); ?>
 				<div class="content-block">
@@ -90,14 +87,18 @@ get_header(); ?>
 <?php endforeach; 
 wp_reset_postdata();?>
 
-</ul>
-			
+</ul>	
 
 </div>
-<a href=index>   link to my site </a>
 
-
-
+<!-- ADVENTURE BLOG  -->
+<h1> Latest Adventures </h1>
+<div class="adventure-wrapper">
+	<div class="adventure-main"><a href="#"> Getting Back to Nature in a Canoe</a><a href="#" class="button">Read More</a></div>
+	<div class="adventure-one"><a href="#">A Night With Friends at the Beach</a><a href="#" class="button">Read More</a></div>
+	<div class="adventure-two"><a href="#">Taking in the View at Big Mountain</a><a href="#" class="button">Read More</a></div>
+	<div class="adventure-three"><a href="#">Star-Gazing at the Night Sky</a><a href="#" class="button">Read More</a></div>
+</div>
 
 
 

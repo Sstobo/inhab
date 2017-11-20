@@ -692,7 +692,9 @@ h1 {
   line-height: 1.75;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 30px; }
+  padding-top: 30px;
+  font-size: 38px;
+  font-weight: 200; }
 
 h2 {
   font-family: 'Novocento', sans-serif;
@@ -1322,3 +1324,151 @@ aside.widget_archive {
     .tax-product-type .product-wrapper .product-block .archive-item {
       position: relative;
       background: white; }
+
+.home .adventure-wrapper {
+  height: 560px;
+  width: 1180px;
+  display: grid;
+  grid-template-areas: "main main one one" "main main two three";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px 20px;
+  margin: 60px auto; }
+  .home .adventure-wrapper a {
+    font-family: "Merriweather", serif;
+    text-decoration: none;
+    color: white;
+    text-transform: none;
+    text-align: left; }
+  .home .adventure-wrapper .adventure-main {
+    grid-area: main;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.15))), url("../../images/adventure-photos/canoe-girl.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.15)), url("../../images/adventure-photos/canoe-girl.jpg");
+    background-size: 150% 150%;
+    background-position: 50% 50%;
+    padding: 50px 20px 0 30px; }
+    .home .adventure-wrapper .adventure-main a {
+      font-size: 48px;
+      font-weight: 100; }
+    .home .adventure-wrapper .adventure-main a.button {
+      width: 120px;
+      font-family: 'Novocento', sans-serif;
+      text-decoration: none;
+      color: white;
+      border: 1px solid white;
+      padding: 12px 14px;
+      margin-top: 20px;
+      text-transform: none;
+      text-align: left;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-align: center; }
+    .home .adventure-wrapper .adventure-main a.button:hover {
+      background-color: #248A83;
+      border: none; }
+  .home .adventure-wrapper .adventure-one {
+    grid-area: one;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.15))), url("../../images/adventure-photos/beach-bonfire.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.15)), url("../../images/adventure-photos/beach-bonfire.jpg");
+    background-size: 150% 150%;
+    background-position: 50% 50%;
+    padding: 50px 20px 0 30px; }
+    .home .adventure-wrapper .adventure-one a {
+      font-size: 36px;
+      font-weight: 100; }
+    .home .adventure-wrapper .adventure-one a.button {
+      width: 120px;
+      font-family: 'Novocento', sans-serif;
+      text-decoration: none;
+      color: white;
+      border: 1px solid white;
+      padding: 12px 14px;
+      margin-top: 20px;
+      text-transform: none;
+      text-align: left;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-align: center; }
+    .home .adventure-wrapper .adventure-one a.button:hover {
+      background-color: #248A83;
+      border: none; }
+  .home .adventure-wrapper .adventure-two {
+    grid-area: two;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.15))), url("../../images/adventure-photos/mountain-hikers.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.15)), url("../../images/adventure-photos/mountain-hikers.jpg");
+    background-size: 200% 200%;
+    background-position: 50% 50%;
+    padding: 30px 20px 0 30px; }
+    .home .adventure-wrapper .adventure-two a {
+      font-size: 28px;
+      font-weight: 100; }
+    .home .adventure-wrapper .adventure-two a.button {
+      width: 120px;
+      font-family: 'Novocento', sans-serif;
+      text-decoration: none;
+      color: white;
+      border: 1px solid white;
+      padding: 12px 14px;
+      margin-top: 20px;
+      text-transform: none;
+      text-align: left;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-align: center; }
+    .home .adventure-wrapper .adventure-two a.button:hover {
+      background-color: #248A83;
+      border: none; }
+  .home .adventure-wrapper .adventure-three {
+    grid-area: three;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.15))), url("../../images/adventure-photos/night-sky.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.15)), url("../../images/adventure-photos/night-sky.jpg");
+    background-size: 180% 180%;
+    background-position: 50% 70%;
+    padding: 30px 10px 0 20px; }
+    .home .adventure-wrapper .adventure-three a {
+      font-size: 28px;
+      font-weight: 100; }
+    .home .adventure-wrapper .adventure-three a.button {
+      width: 120px;
+      font-family: 'Novocento', sans-serif;
+      text-decoration: none;
+      color: white;
+      border: 1px solid white;
+      padding: 12px 14px;
+      margin-top: 20px;
+      text-transform: none;
+      text-align: left;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-align: center; }
+    .home .adventure-wrapper .adventure-three a.button:hover {
+      background-color: #248A83;
+      border: none; }
