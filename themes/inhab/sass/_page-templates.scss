@@ -242,7 +242,7 @@
             text-shadow: none;
             box-shadow: none;
             text-transform: uppercase;
-            padding: 12px 24px 12px 24px; 
+            padding: 12px;
           }
           .wpcf7-submit:hover  {
             background-color: $hovergreen;
@@ -264,6 +264,25 @@
                   }    
               }
     }
+    .page {
+      h2 {
+        font-size: 2rem;
+      }
+    form.wpcf7-form {
+      p label {
+       text-transform: uppercase;
+       font-family: 'Novocento', sans-serif;
+       color: $purple;
+    }
+    .wpcf7-form-control {
+      padding: 14px 24px;
+      font-size: 1rem;
+    }
+    input {
+      margin-top: 10px;
+    }
+    }
+   }
     
 // ************ SIDEBAR
    // Primary sidebar container
@@ -351,13 +370,13 @@
         .entry-content p {
           color: black;
           position: relative;
-          width: 700px;
+          width: 760px;
           margin: 0 auto;
           margin-bottom: 80px;
           bottom: 34px;
           font-family: $font-main;    
           text-align: left;
-          right: 32px;
+       
     }
    }
     
@@ -918,7 +937,7 @@
     }
    
 
-// SEARCH PAGE 
+// #############  SEARCH PAGE 
       .search {
         .content-area {
           display: flex;
@@ -958,5 +977,197 @@
       }
 
 
+// ############## SINGLE BLOG POST
 
+  .single-post {
+    .site-main {
+      width: 1120px;
+    }
+    .site-content {
+      display: flex;
+      flex-direction: row;
+      padding-top: 50px;
+    }
+    
+    a.button {
+      color: black;
+      border: 1px solid black;
+      padding: 14px;
+      text-decoration: none;
+      text-transform: uppercase;
+      position: relative;
+      left: 100px;
+     
+    }
+    a.button:hover {
+      color: white;
+      border: none;
+      background-color: $green;
+    }
+    .entry-header {
+      margin-top: 40px;
+    }
+    .entry-content p {
+      position: relative;
+
+      height: auto;
+      margin-left: 100px;
+      margin-bottom: 30px;
+      bottom: 34px;
+      font-family: $font-main;    
+      text-align: left; 
+    }
+    .single-links {
+      position: relative;
+      margin-left: 100px;
       
+    a {
+      font-size: .8rem;
+      padding: 12px 24px;
+      border: 1px solid black;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: black; 
+    }
+    a:hover {
+      color: white;
+      background-color: $green;
+      border: none;
+    }
+    .dashicons {
+      margin-right: 10px;
+    }
+  }
+    .entry-header {
+      position: relative;
+          img {
+            padding-left: 100px;
+            width: 860px;
+          }
+          h2 { 
+            width: 400px;
+            background-color: #248A83;
+            font-size: 2rem;
+            position: absolute;
+            top: 10px;
+            left: 100px;
+            padding: 10px;
+              a {
+                color: white;
+                text-decoration: none;
+              }
+            }
+     .entry-meta {
+        background-color: #248A83;
+        position: relative;
+        width: 400px;
+        left: 460px;
+        bottom: 38px;
+        color: white;
+        padding: 3px;
+       }
+     }
+  }
+
+ .single {
+    .form-submit {
+      input#submit {
+        border-radius: 0;
+        background-color: $green;
+        box-shadow: none;
+        text-shadow: none;
+        color: white;
+        font-size: 1rem;
+        border: none;
+        text-transform: uppercase;
+      }
+    }
+    .comment-form-author {
+      display: block;
+      width: 300px;
+      .required {
+        color: $orange;
+      }
+      input {
+        margin-top: 16px;
+        background-color: $light-grey;
+        border: 1px solid $medium-grey;
+        border-radius: 0;
+        padding: 6px;
+      }
+      label {
+        text-transform: uppercase;
+        font-family: 'Novocento', sans-serif;
+        color: $purple;
+      }
+      
+    }
+    .comment-form-email {
+      display: block;
+      width: 300px;
+      .required {
+        color: $orange;
+      }
+      label {  
+        text-transform: uppercase;
+        font-family: 'Novocento', sans-serif;
+        color: $purple;
+      }
+      input {
+        padding: 6px;
+        margin-top: 16px;
+        background-color: $light-grey;
+        border: 1px solid $medium-grey;
+        border-radius: 0;
+      }     
+    }
+    .comment-form-url {
+      width: 910px;
+      input {
+        padding: 6px;
+        margin-top: 16px;
+        background-color: $light-grey;
+        border: 1px solid $medium-grey;
+        border-radius: 0;
+      }
+        label {
+          text-transform: uppercase;
+          font-family: 'Novocento', sans-serif;
+          color: $purple;       
+      }
+      input#url {
+        width: 900px;
+      }
+    }
+    h3.comment-reply-title {
+      display: none;
+    }
+    .comment-title {
+      text-align: left;
+      font-weight: bold;
+      font-size: 1.8rem;     
+    } 
+    .comment-form {
+       display: flex;
+       flex-direction: row;
+       width: 910px;
+       flex-wrap: wrap;
+    .comment-form-comment {
+        display: block;
+        label {
+          text-transform: uppercase;
+          font-family: 'Novocento', sans-serif;
+          color: $purple;
+        }
+        textarea {
+        margin-top: 16px;
+        width: 860px;
+        background-color: $light-grey;
+        border: 1px solid $medium-grey;
+        border-radius: 0;
+      }      
+    }
+  }
+}
+
+ 

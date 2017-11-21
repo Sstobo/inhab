@@ -434,7 +434,7 @@ fieldset {
 
 fieldset label input.search-field {
   border-radius: 0;
-  background-color: #a1a1a1;
+  background-color: #f4f4f4;
   color: black;
   padding: 8px;
   position: relative;
@@ -762,7 +762,7 @@ h1.entry-title {
   position: fixed;
   width: 100vw;
   opacity: .9;
-  border-bottom: 1px solid #a1a1a1;
+  border-bottom: 1px solid #f4f4f4;
   background-color: #ffffff;
   padding-left: 100px;
   z-index: 999; }
@@ -901,13 +901,13 @@ footer {
   .site-content-contact #wpgmza_map {
     margin-bottom: 30px; }
   .site-content-contact input {
-    background-color: #a1a1a1;
+    background-color: #f4f4f4;
     border-radius: 0px;
-    border: 1px solid #e1e1e1; }
+    border: 1px solid #a1a1a1; }
   .site-content-contact textarea {
-    background-color: #a1a1a1;
+    background-color: #f4f4f4;
     border-radius: 0px;
-    border: 1px solid #e1e1e1; }
+    border: 1px solid #a1a1a1; }
   .site-content-contact .wpcf7-submit {
     background-color: #248A83;
     color: white;
@@ -915,7 +915,7 @@ footer {
     -webkit-box-shadow: none;
             box-shadow: none;
     text-transform: uppercase;
-    padding: 12px 24px 12px 24px; }
+    padding: 12px; }
   .site-content-contact .wpcf7-submit:hover {
     background-color: #19625d;
     color: white;
@@ -933,12 +933,27 @@ footer {
       width: 710px;
       margin: 0 auto; }
 
+.page h2 {
+  font-size: 2rem; }
+
+.page form.wpcf7-form p label {
+  text-transform: uppercase;
+  font-family: 'Novocento', sans-serif;
+  color: #2f1339; }
+
+.page form.wpcf7-form .wpcf7-form-control {
+  padding: 14px 24px;
+  font-size: 1rem; }
+
+.page form.wpcf7-form input {
+  margin-top: 10px; }
+
 .sidebar-container {
   text-align: start;
   width: 300px;
   min-width: 300px;
   padding-left: 30px;
-  border-left: 1px solid #a1a1a1;
+  border-left: 1px solid #f4f4f4;
   display: block;
   padding-top: 50px; }
   .sidebar-container h2 {
@@ -994,13 +1009,12 @@ aside.widget_archive {
 .blog .entry-content p {
   color: black;
   position: relative;
-  width: 700px;
+  width: 760px;
   margin: 0 auto;
   margin-bottom: 80px;
   bottom: 34px;
   font-family: "Merriweather", serif;
-  text-align: left;
-  right: 32px; }
+  text-align: left; }
 
 .blog .entry-meta {
   background-color: #248A83;
@@ -1057,8 +1071,8 @@ aside.widget_archive {
     height: 265px;
     width: 265px;
     background-color: white;
-    border: 1px solid #a1a1a1;
-    border-top: 5px solid #a1a1a1;
+    border: 1px solid #f4f4f4;
+    border-top: 5px solid #f4f4f4;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1126,7 +1140,7 @@ aside.widget_archive {
     margin: 20px; }
     .journal-container .journal-block .content-block {
       height: 170px;
-      border: 1px solid #a1a1a1;
+      border: 1px solid #f4f4f4;
       position: relative; }
       .journal-container .journal-block .content-block .button {
         width: 140px;
@@ -1214,8 +1228,8 @@ aside.widget_archive {
     .post-type-archive .content-area .product-block .content-block {
       height: 55px;
       font-size: 1rem;
-      border: 1px solid #a1a1a1;
-      border-top: 4px solid #a1a1a1;
+      border: 1px solid #f4f4f4;
+      border-top: 4px solid #f4f4f4;
       padding-left: 12px;
       position: relative;
       bottom: 8px; }
@@ -1282,7 +1296,7 @@ aside.widget_archive {
   margin: 0 auto;
   padding-top: 50px;
   display: block;
-  border-bottom: 1px solid #a1a1a1; }
+  border-bottom: 1px solid #f4f4f4; }
 
 .tax-product-type .link-wrapper {
   display: -webkit-box;
@@ -1330,8 +1344,8 @@ aside.widget_archive {
     .tax-product-type .product-wrapper .product-block .content-block {
       height: 55px;
       font-size: 1rem;
-      border: 1px solid #a1a1a1;
-      border-top: 4px solid #a1a1a1;
+      border: 1px solid #f4f4f4;
+      border-top: 4px solid #f4f4f4;
       padding: 0 12px 0 12px;
       position: relative;
       bottom: 8px;
@@ -1556,7 +1570,7 @@ aside.widget_archive {
 .search .search-button {
   width: 100px;
   height: 100px;
-  border: 1px solid #a1a1a1;
+  border: 1px solid #f4f4f4;
   text-decoration: none;
   padding: 12px 24px;
   color: black;
@@ -1565,3 +1579,174 @@ aside.widget_archive {
 .search .dashicons {
   position: relative;
   left: 10px; }
+
+.single-post .site-main {
+  width: 1120px; }
+
+.single-post .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 50px; }
+
+.single-post a.button {
+  color: black;
+  border: 1px solid black;
+  padding: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  left: 100px; }
+
+.single-post a.button:hover {
+  color: white;
+  border: none;
+  background-color: #248A83; }
+
+.single-post .entry-header {
+  margin-top: 40px; }
+
+.single-post .entry-content p {
+  position: relative;
+  height: auto;
+  margin-left: 100px;
+  margin-bottom: 30px;
+  bottom: 34px;
+  font-family: "Merriweather", serif;
+  text-align: left; }
+
+.single-post .single-links {
+  position: relative;
+  margin-left: 100px; }
+  .single-post .single-links a {
+    font-size: .8rem;
+    padding: 12px 24px;
+    border: 1px solid black;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black; }
+  .single-post .single-links a:hover {
+    color: white;
+    background-color: #248A83;
+    border: none; }
+  .single-post .single-links .dashicons {
+    margin-right: 10px; }
+
+.single-post .entry-header {
+  position: relative; }
+  .single-post .entry-header img {
+    padding-left: 100px;
+    width: 860px; }
+  .single-post .entry-header h2 {
+    width: 400px;
+    background-color: #248A83;
+    font-size: 2rem;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    padding: 10px; }
+    .single-post .entry-header h2 a {
+      color: white;
+      text-decoration: none; }
+  .single-post .entry-header .entry-meta {
+    background-color: #248A83;
+    position: relative;
+    width: 400px;
+    left: 460px;
+    bottom: 38px;
+    color: white;
+    padding: 3px; }
+
+.single .form-submit input#submit {
+  border-radius: 0;
+  background-color: #248A83;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  text-transform: uppercase; }
+
+.single .comment-form-author {
+  display: block;
+  width: 300px; }
+  .single .comment-form-author .required {
+    color: #d99054; }
+  .single .comment-form-author input {
+    margin-top: 16px;
+    background-color: #f4f4f4;
+    border: 1px solid #a1a1a1;
+    border-radius: 0;
+    padding: 6px; }
+  .single .comment-form-author label {
+    text-transform: uppercase;
+    font-family: 'Novocento', sans-serif;
+    color: #2f1339; }
+
+.single .comment-form-email {
+  display: block;
+  width: 300px; }
+  .single .comment-form-email .required {
+    color: #d99054; }
+  .single .comment-form-email label {
+    text-transform: uppercase;
+    font-family: 'Novocento', sans-serif;
+    color: #2f1339; }
+  .single .comment-form-email input {
+    padding: 6px;
+    margin-top: 16px;
+    background-color: #f4f4f4;
+    border: 1px solid #a1a1a1;
+    border-radius: 0; }
+
+.single .comment-form-url {
+  width: 910px; }
+  .single .comment-form-url input {
+    padding: 6px;
+    margin-top: 16px;
+    background-color: #f4f4f4;
+    border: 1px solid #a1a1a1;
+    border-radius: 0; }
+  .single .comment-form-url label {
+    text-transform: uppercase;
+    font-family: 'Novocento', sans-serif;
+    color: #2f1339; }
+  .single .comment-form-url input#url {
+    width: 900px; }
+
+.single h3.comment-reply-title {
+  display: none; }
+
+.single .comment-title {
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.8rem; }
+
+.single .comment-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 910px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .single .comment-form .comment-form-comment {
+    display: block; }
+    .single .comment-form .comment-form-comment label {
+      text-transform: uppercase;
+      font-family: 'Novocento', sans-serif;
+      color: #2f1339; }
+    .single .comment-form .comment-form-comment textarea {
+      margin-top: 16px;
+      width: 860px;
+      background-color: #f4f4f4;
+      border: 1px solid #a1a1a1;
+      border-radius: 0; }
