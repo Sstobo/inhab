@@ -41,4 +41,5 @@
 
 			</header><!-- #masthead -->
 
-			<div id="content" class="site-content">
+		</div>
+	</body>

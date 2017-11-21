@@ -426,6 +426,23 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+.error404 button.search-submit {
+  display: none; }
+
+fieldset {
+  border: none; }
+
+fieldset label input.search-field {
+  border-radius: 0;
+  background-color: #a1a1a1;
+  color: black;
+  padding: 8px;
+  position: relative;
+  right: 12px; }
+
+fieldset button.search-submit {
+  display: none; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -680,10 +697,13 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+body {
+  font-size: 16px; }
+
 p {
   color: #404040;
   font-family: "Merriweather", serif;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.75; }
 
 h1 {
@@ -693,13 +713,13 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   padding-top: 30px;
-  font-size: 38px;
+  font-size: 2.5rem;
   font-weight: 200; }
 
 h2 {
   font-family: 'Novocento', sans-serif;
   text-transform: uppercase;
-  font-size: 19px; }
+  font-size: 1.2rem; }
 
 span {
   font-family: "Merriweather", serif; }
@@ -718,7 +738,7 @@ h1.entry-title {
 .bold {
   font-weight: bold; }
 
-/* ******** FRONT PAGE */
+/* ************ FRONT PAGE */
 .frontpage-hero {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.15))), url("../../images/home-hero.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.15)), url("../../images/home-hero.jpg");
@@ -742,7 +762,7 @@ h1.entry-title {
   position: fixed;
   width: 100vw;
   opacity: .9;
-  border-bottom: 1px solid #c9c9c9;
+  border-bottom: 1px solid #a1a1a1;
   background-color: #ffffff;
   padding-left: 100px;
   z-index: 999; }
@@ -750,7 +770,7 @@ h1.entry-title {
 .header-logo {
   height: 50px;
   width: 50px;
-  background-image: url("../../images/logos/inhabitent-logo-tent-white.svg");
+  background-image: url("../../images/logos/inhabitent-logo-tent.svg");
   background-size: 100% 100%; }
 
 .main-navigation {
@@ -768,7 +788,7 @@ h1.entry-title {
   .main-navigation a {
     text-decoration: none;
     color: #248A83;
-    font-size: 20px;
+    font-size: 1.3rem;
     padding-left: 35px;
     padding-top: 12px;
     position: relative;
@@ -779,7 +799,7 @@ h1.entry-title {
   .main-navigation h2.entry-title {
     display: none; }
   .main-navigation i {
-    font-size: 18px;
+    font-size: 1.1rem;
     color: #248A83;
     position: relative;
     bottom: 29px;
@@ -848,7 +868,7 @@ footer {
 .site-about {
   padding-top: 20px; }
   .site-about h2 {
-    font-size: 33px;
+    font-size: 2rem;
     text-transform: uppercase;
     text-align: center; }
   .site-about .about-container {
@@ -863,7 +883,7 @@ footer {
     text-transform: uppercase;
     position: relative;
     top: 300px;
-    font-size: 48px; }
+    font-size: 3rem; }
 
 .primary-contact {
   width: 1120px; }
@@ -881,11 +901,11 @@ footer {
   .site-content-contact #wpgmza_map {
     margin-bottom: 30px; }
   .site-content-contact input {
-    background-color: #c9c9c9;
+    background-color: #a1a1a1;
     border-radius: 0px;
     border: 1px solid #e1e1e1; }
   .site-content-contact textarea {
-    background-color: #c9c9c9;
+    background-color: #a1a1a1;
     border-radius: 0px;
     border: 1px solid #e1e1e1; }
   .site-content-contact .wpcf7-submit {
@@ -918,8 +938,12 @@ footer {
   width: 300px;
   min-width: 300px;
   padding-left: 30px;
-  border-left: 1px solid #c9c9c9;
-  display: block; }
+  border-left: 1px solid #a1a1a1;
+  display: block;
+  padding-top: 50px; }
+  .sidebar-container h2 {
+    letter-spacing: 2px;
+    font-size: 1.5rem; }
   .sidebar-container a {
     color: #248A83;
     text-decoration: none; }
@@ -929,7 +953,7 @@ footer {
     position: relative;
     right: 90px; }
   .sidebar-container .dashicons {
-    font-size: 20px;
+    font-size: 1.3rem;
     margin-right: 20px; }
 
 aside.widget_archive {
@@ -958,7 +982,7 @@ aside.widget_archive {
   .blog .entry-header h2 {
     width: 400px;
     background-color: #248A83;
-    font-size: 33.6px;
+    font-size: 2rem;
     position: absolute;
     top: 10px;
     left: 100px;
@@ -981,7 +1005,7 @@ aside.widget_archive {
   position: relative;
   width: 400px;
   left: 460px;
-  bottom: 35px;
+  bottom: 38px;
   color: white;
   padding: 3px; }
 
@@ -1031,8 +1055,8 @@ aside.widget_archive {
     height: 265px;
     width: 265px;
     background-color: white;
-    border: 1px solid #c9c9c9;
-    border-top: 5px solid #c9c9c9;
+    border: 1px solid #a1a1a1;
+    border-top: 5px solid #a1a1a1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1083,7 +1107,7 @@ aside.widget_archive {
     font: "Merriweather", serif;
     color: #248A83;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.3rem;
     line-height: 26px;
     letter-spacing: 2px;
     position: relative;
@@ -1092,7 +1116,7 @@ aside.widget_archive {
     margin: auto auto;
     text-transform: uppercase; }
   .journal-container p {
-    font-size: 12px;
+    font-size: .8rem;
     padding-left: 10px; }
   .journal-container .journal-block {
     height: 400px;
@@ -1100,7 +1124,7 @@ aside.widget_archive {
     margin: 20px; }
     .journal-container .journal-block .content-block {
       height: 170px;
-      border: 1px solid #c9c9c9;
+      border: 1px solid #a1a1a1;
       position: relative; }
       .journal-container .journal-block .content-block .button {
         width: 140px;
@@ -1108,7 +1132,7 @@ aside.widget_archive {
         border: 1px solid black;
         background-color: white;
         color: black;
-        font-size: 14px;
+        font-size: .8rem;
         position: absolute;
         bottom: 8px;
         left: 8px;
@@ -1187,9 +1211,9 @@ aside.widget_archive {
       height: 200px; }
     .post-type-archive .content-area .product-block .content-block {
       height: 55px;
-      font-size: 16px;
-      border: 1px solid #c9c9c9;
-      border-top: 4px solid #c9c9c9;
+      font-size: 1rem;
+      border: 1px solid #a1a1a1;
+      border-top: 4px solid #a1a1a1;
       padding-left: 12px;
       position: relative;
       bottom: 8px; }
@@ -1234,11 +1258,11 @@ aside.widget_archive {
     font-size: 38px;
     font-family: 'Novocento', sans-serif; }
   .single-main .price-meta {
-    font-size: 28px; }
+    font-size: 2rem; }
   .single-main .single-links {
     margin-bottom: 150px; }
   .single-main a {
-    font-size: 12px;
+    font-size: .8rem;
     padding: 12px 24px;
     border: 1px solid black;
     text-decoration: none;
@@ -1256,7 +1280,7 @@ aside.widget_archive {
   margin: 0 auto;
   padding-top: 50px;
   display: block;
-  border-bottom: 1px solid #c9c9c9; }
+  border-bottom: 1px solid #a1a1a1; }
 
 .tax-product-type .link-wrapper {
   display: -webkit-box;
@@ -1274,7 +1298,7 @@ aside.widget_archive {
           flex-direction: row; }
   .tax-product-type .link-wrapper a {
     font-family: 'Novocento', sans-serif;
-    font-size: 19px;
+    font-size: 1.1rem;
     color: #248A83;
     margin: 0 auto;
     padding: 12px;
@@ -1303,9 +1327,9 @@ aside.widget_archive {
       height: 200px; }
     .tax-product-type .product-wrapper .product-block .content-block {
       height: 55px;
-      font-size: 16px;
-      border: 1px solid #c9c9c9;
-      border-top: 4px solid #c9c9c9;
+      font-size: 1rem;
+      border: 1px solid #a1a1a1;
+      border-top: 4px solid #a1a1a1;
       padding: 0 12px 0 12px;
       position: relative;
       bottom: 8px;
@@ -1340,6 +1364,8 @@ aside.widget_archive {
     color: white;
     text-transform: none;
     text-align: left; }
+  .home .adventure-wrapper a.pic-link:hover {
+    color: #808080; }
   .home .adventure-wrapper .adventure-main {
     grid-area: main;
     display: -webkit-box;
@@ -1355,7 +1381,7 @@ aside.widget_archive {
     background-position: 50% 50%;
     padding: 50px 20px 0 30px; }
     .home .adventure-wrapper .adventure-main a {
-      font-size: 48px;
+      font-size: 3rem;
       font-weight: 100; }
     .home .adventure-wrapper .adventure-main a.button {
       width: 120px;
@@ -1367,7 +1393,7 @@ aside.widget_archive {
       margin-top: 20px;
       text-transform: none;
       text-align: left;
-      font-size: 14px;
+      font-size: .8rem;
       text-transform: uppercase;
       text-align: center; }
     .home .adventure-wrapper .adventure-main a.button:hover {
@@ -1388,7 +1414,7 @@ aside.widget_archive {
     background-position: 50% 50%;
     padding: 50px 20px 0 30px; }
     .home .adventure-wrapper .adventure-one a {
-      font-size: 36px;
+      font-size: 2.2rem;
       font-weight: 100; }
     .home .adventure-wrapper .adventure-one a.button {
       width: 120px;
@@ -1400,7 +1426,7 @@ aside.widget_archive {
       margin-top: 20px;
       text-transform: none;
       text-align: left;
-      font-size: 14px;
+      font-size: .8rem;
       text-transform: uppercase;
       text-align: center; }
     .home .adventure-wrapper .adventure-one a.button:hover {
@@ -1421,7 +1447,7 @@ aside.widget_archive {
     background-position: 50% 50%;
     padding: 30px 20px 0 30px; }
     .home .adventure-wrapper .adventure-two a {
-      font-size: 28px;
+      font-size: 1.8rem;
       font-weight: 100; }
     .home .adventure-wrapper .adventure-two a.button {
       width: 120px;
@@ -1433,7 +1459,7 @@ aside.widget_archive {
       margin-top: 20px;
       text-transform: none;
       text-align: left;
-      font-size: 14px;
+      font-size: .8rem;
       text-transform: uppercase;
       text-align: center; }
     .home .adventure-wrapper .adventure-two a.button:hover {
@@ -1454,7 +1480,7 @@ aside.widget_archive {
     background-position: 50% 70%;
     padding: 30px 10px 0 20px; }
     .home .adventure-wrapper .adventure-three a {
-      font-size: 28px;
+      font-size: 1.8rem;
       font-weight: 100; }
     .home .adventure-wrapper .adventure-three a.button {
       width: 120px;
@@ -1466,9 +1492,74 @@ aside.widget_archive {
       margin-top: 20px;
       text-transform: none;
       text-align: left;
-      font-size: 14px;
+      font-size: .8rem;
       text-transform: uppercase;
       text-align: center; }
     .home .adventure-wrapper .adventure-three a.button:hover {
       background-color: #248A83;
       border: none; }
+
+.error404 {
+  text-align: left;
+  text-decoration: none; }
+  .error404 .site-main {
+    padding-top: 50px; }
+  .error404 h1 {
+    text-align: left;
+    font-weight: bold;
+    letter-spacing: 2px; }
+  .error404 h2 {
+    letter-spacing: 2px;
+    font-size: 1.6rem; }
+  .error404 a {
+    color: #248A83;
+    text-decoration: none; }
+  .error404 ul {
+    list-style: none;
+    text-align: left;
+    list-style-type: none;
+    position: relative;
+    right: 88px; }
+    .error404 ul li {
+      font-family: "Merriweather", serif;
+      font-size: 1rem;
+      line-height: 1.75; }
+
+.search .content-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.search .site-main {
+  width: 910px;
+  padding: 0 50px 50px 70px; }
+
+.search h1 {
+  font-weight: bold;
+  text-align: left;
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 30px; }
+
+.search .entry-title a {
+  color: #248A83;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 2rem; }
+
+.search .search-button {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #a1a1a1;
+  text-decoration: none;
+  padding: 12px 24px;
+  color: black;
+  text-transform: uppercase; }
+
+.search .dashicons {
+  position: relative;
+  left: 10px; }

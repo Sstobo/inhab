@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all single posts.
+  * Template Name: Post Page 
  *
  * @package RED_Starter_Theme
  */
@@ -14,7 +14,7 @@ get_header(); ?>
 		
 		<div class="single-product">
 			<?php the_post_thumbnail(); ?>
-			
+			<h1 class="single-title"><?php single_post_title(); ?></h1>
 		</div>
 
 		<div class="single-info">
@@ -25,7 +25,7 @@ get_header(); ?>
 <div class="single-content"> <?php the_content(); ?> </div>
 <div class="single-links">
 <a href="#"><span class="dashicons dashicons-facebook-alt"></span>like</a>
-<a href="#"><span class="dashicons dashicons-twitter"></span>tweet</a>
+<a href="#"><span class="dashicons dashicons-twitter"></span>tsag</a>
 <a href="#"><span class="dashicons dashicons-location"></span>pin</a>
 </div>
 			</div>

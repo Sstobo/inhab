@@ -2,12 +2,14 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-// Global variables
-
+// ************ GLOBAL VARIABLES
+ body {
+  font-size: 16px;
+ }
   p {
     color: $font-color;
     font-family: $font-main;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.75;
   }
   h1 {
@@ -17,13 +19,13 @@
     text-align: center;
     text-transform: uppercase;
     padding-top: 30px;
-    font-size: 38px;
+    font-size: 2.5rem;
     font-weight: 200;
   }
   h2 {
      font-family: 'Novocento', sans-serif;
      text-transform: uppercase;
-     font-size: 19px;
+     font-size: 1.2rem;
   }
   span {
     font-family: $font-main;
@@ -42,7 +44,7 @@
   .bold {
     font-weight: bold;
   }
-/* ******** FRONT PAGE */
+/* ************ FRONT PAGE */
     .frontpage-hero {
       background-image:
        linear-gradient(
@@ -85,7 +87,7 @@
   .header-logo {
       height: 50px;
       width: 50px;
-      background-image:url("../../images/logos/inhabitent-logo-tent-white.svg");
+      background-image:url("../../images/logos/inhabitent-logo-tent.svg");
       background-size: 100% 100%;
   }
   // Link bar parnt line 35
@@ -97,7 +99,7 @@
        a 
        { text-decoration: none;
        color: $green;
-       font-size: 20px;
+       font-size: 1.3rem;
        padding-left: 35px;
        padding-top: 12px;
        position: relative;
@@ -110,7 +112,7 @@
         display: none;
       }
       i {
-        font-size: 18px;
+        font-size: 1.1rem;
         color: $green;
         position: relative;
         bottom: 29px;
@@ -119,8 +121,8 @@
     }
   
 
-// ************* FOOTER
-    body {
+// ************ FOOTER
+  body {
       min-width: 1120px;
     }    
   footer {
@@ -187,7 +189,7 @@
   .site-about {
     padding-top: 20px;
      h2 {
-      font-size: 33px;
+      font-size: 2rem;
       text-transform: uppercase;
       text-align: center;
     } 
@@ -205,7 +207,7 @@
       text-transform: uppercase;
       position: relative;
       top: 300px;
-      font-size: 48px;
+      font-size: 3rem;
 
     }
    
@@ -256,14 +258,14 @@
                   text-transform: uppercase;
                   margin-left: 100px;
                 }
-                  .entry-content {
-                    width: 710px;
-                    margin: 0 auto;
+              .entry-content {
+                 width: 710px;
+                 margin: 0 auto;
                   }    
               }
     }
     
-// ********* SIDEBAR
+// ************ SIDEBAR
    // Primary sidebar container
   .sidebar-container {
     text-align: start;
@@ -272,6 +274,11 @@
     padding-left: 30px;
     border-left: 1px solid $light-grey;
     display: block;
+    padding-top: 50px;
+    h2 {
+      letter-spacing: 2px;
+      font-size: 1.5rem;
+    }
         a {
           color: $green;
           text-decoration: none;
@@ -284,7 +291,7 @@
           right: 90px;
         } 
         .dashicons {
-          font-size: 20px;
+          font-size: 1.3rem;
           margin-right: 20px;
           
         }
@@ -329,7 +336,7 @@
             h2 { 
               width: 400px;
               background-color: #248A83;
-              font-size: 33.6px;
+              font-size: 2rem;
               position: absolute;
               top: 10px;
               left: 100px;
@@ -360,7 +367,7 @@
         position: relative;
         width: 400px;
         left: 460px;
-        bottom: 35px;
+        bottom: 38px;
         color: white;
         padding: 3px;
       }
@@ -379,7 +386,7 @@
     }}
     // Content wrapper
         
-// ********* FRONT PAGE CONTENT 
+// ************ FRONT PAGE CONTENT 
 
    .product-info  {
       width: 100vw;
@@ -435,7 +442,7 @@
     }
 
 
-// ************* JOURNAL LINKS
+// ************ JOURNAL LINKS
   .journal-container {
     width: 100vw;
     height: 500px;
@@ -448,7 +455,7 @@
         font: $font-main;
         color: $green;
         text-decoration: none;
-        font-size: 20px;
+        font-size: 1.3rem;
         line-height: 26px;
         letter-spacing: 2px;
         position: relative;
@@ -458,7 +465,7 @@
         text-transform: uppercase;
       }
       p {
-        font-size: 12px;
+        font-size: .8rem;
         padding-left: 10px;
         
       }
@@ -476,7 +483,7 @@
               border: 1px solid black;
               background-color: white;
               color: black;
-              font-size: 14px;
+              font-size: .8rem;
               position: absolute;
               bottom: 8px;
               left: 8px;
@@ -497,7 +504,7 @@
   }
 
 
-// ************* PRODUCTS ARCHIVE
+// ************ PRODUCTS ARCHIVE
  .post-type-archive {
   .content-area {
     padding-top: 30px;
@@ -549,7 +556,7 @@
           }
           .content-block {
             height: 55px;
-            font-size: 16px;
+            font-size: 1rem;
             border: 1px solid $light-grey;
             border-top: 4px solid $light-grey;
             padding-left: 12px;
@@ -574,7 +581,7 @@
     }
   }
  }
-// SINGLE PRODUCT PAGE
+// ************ SINGLE PRODUCT PAGE
     .single-content-area {
       padding-top: 50px;
     }  
@@ -602,13 +609,13 @@
           font-family: 'Novocento', sans-serif;
         }
         .price-meta {
-          font-size: 28px;
+          font-size: 2rem;
         }
         .single-links {
           margin-bottom: 150px;
         }
         a {
-          font-size: 12px;
+          font-size: .8rem;
           padding: 12px 24px;
           border: 1px solid black;
           text-decoration: none;
@@ -626,7 +633,7 @@
        
     }
 
-// TAXONOMY PRODUCT TYPE
+// ************ TAXONOMY PRODUCT TYPE
 
     .tax-product-type {
       .content-area {
@@ -649,7 +656,7 @@
         
               a {
                 font-family: 'Novocento', sans-serif;
-                font-size: 19px;
+                font-size: 1.1rem;
                 color: $green;
                 margin: 0 auto;
                 padding: 12px;
@@ -676,7 +683,7 @@
                     }
                     .content-block {
                       height: 55px;
-                      font-size: 16px;
+                      font-size: 1rem;
                       border: 1px solid $light-grey;
                       border-top: 4px solid $light-grey;
                       padding: 0 12px 0 12px;
@@ -703,7 +710,7 @@
             }
           }
 
-// FRONT PAGE ADVENTURES
+// ************ FRONT PAGE ADVENTURES
       .home {
       
         .adventure-wrapper {
@@ -725,6 +732,9 @@
           text-transform: none;
           text-align: left;
         }
+        a.pic-link:hover {
+          color: $hover-yellow;
+        }
         
         .adventure-main {
           grid-area: main;
@@ -739,7 +749,7 @@
           background-position: 50% 50%;  
           padding: 50px 20px 0 30px;
           a {
-            font-size: 48px;
+            font-size: 3rem;
             font-weight: 100;
           }         
           a.button {
@@ -752,7 +762,7 @@
             margin-top: 20px;
             text-transform: none;
             text-align: left;
-            font-size: 14px;
+            font-size: .8rem;
             text-transform: uppercase;
             text-align: center;
           } 
@@ -774,7 +784,7 @@
           background-position: 50% 50%;
           padding: 50px 20px 0 30px;
           a {
-            font-size: 36px;
+            font-size: 2.2rem;
             font-weight: 100;
           } 
           a.button {
@@ -787,7 +797,7 @@
             margin-top: 20px;
             text-transform: none;
             text-align: left;
-            font-size: 14px;
+            font-size: .8rem;
             text-transform: uppercase;
             text-align: center;
           } 
@@ -810,9 +820,10 @@
           background-position: 50% 50%;
           padding: 30px 20px 0 30px;
           a {
-            font-size: 28px;
+            font-size: 1.8rem;
             font-weight: 100;
           } 
+          
           a.button {
             width: 120px;
             font-family: 'Novocento', sans-serif;
@@ -823,7 +834,7 @@
             margin-top: 20px;
             text-transform: none;
             text-align: left;
-            font-size: 14px;
+            font-size: .8rem;
             text-transform: uppercase;
             text-align: center;
           } 
@@ -845,7 +856,7 @@
           background-position: 50% 70%;
           padding: 30px 10px 0 20px;
            a {
-            font-size: 28px;
+            font-size: 1.8rem;
             font-weight: 100;
           } 
           a.button {
@@ -858,7 +869,7 @@
             margin-top: 20px;
             text-transform: none;
             text-align: left;
-            font-size: 14px;
+            font-size: .8rem;
             text-transform: uppercase;
             text-align: center;
           } 
@@ -871,3 +882,81 @@
         }
       }
     }
+ 
+// ************ 404 PAGE
+    .error404 {
+      .site-main {
+        padding-top: 50px;
+      }
+      h1 {
+        text-align: left;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+      h2 {
+        letter-spacing: 2px;
+        font-size: 1.6rem;
+      }
+      text-align: left;
+      text-decoration: none;
+      a {
+        color: $green;
+        text-decoration: none;
+      }
+      ul {
+        list-style: none;
+        text-align: left;
+        list-style-type: none;
+        position: relative;
+        right: 88px;
+       li {
+        font-family: $font-main;
+        font-size: 1rem;
+        line-height: 1.75;
+       }      
+      }     
+    }
+   
+
+// SEARCH PAGE 
+      .search {
+        .content-area {
+          display: flex;
+          padding-top: 50px;
+          flex-direction: row;
+        }
+        .site-main {
+          width: 910px;
+          padding: 0 50px 50px 70px;
+        }
+        h1 {
+          font-weight: bold;
+          text-align: left;
+          border-bottom: 1px solid #e1e1e1;
+          margin-bottom: 30px;
+        }
+        .entry-title a {        
+          color: $green;
+          text-decoration: none;
+          letter-spacing: 2px;
+          font-size: 2rem;
+        }
+        .search-button {
+          width: 100px;
+          height: 100px;
+          border: 1px solid $light-grey;
+          text-decoration: none;
+          padding: 12px 24px;
+          color: black;
+          text-transform: uppercase;
+        }
+        .dashicons {
+          position: relative;
+          left: 10px;
+        }
+
+      }
+
+
+
+      

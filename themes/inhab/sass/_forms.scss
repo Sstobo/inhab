@@ -60,3 +60,21 @@ textarea {
 	padding-left: 3px;
 	width: 100%;
 }
+.error404 button.search-submit {
+	display: none;
+}
+fieldset {
+	border: none;
+}
+fieldset label input.search-field {
+	border-radius: 0;
+	background-color: $light-grey;
+	color: black;
+	padding: 8px;
+	position: relative;
+	right: 12px;
+}
+
+fieldset button.search-submit {
+	display: none;
+}

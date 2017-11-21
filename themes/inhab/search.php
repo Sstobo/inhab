@@ -18,21 +18,21 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
+		
 				<?php get_template_part( 'template-parts/content', 'search' ); ?>
-
+				<a class = "search-button" href="<?php the_permalink(); ?>">Read More <span class="dashicons dashicons-arrow-right-alt"></span></a>
 			<?php endwhile; ?>
 
-			<?php red_starter_numbered_pagination(); ?>
-
+	
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-
 		</main><!-- #main -->
+		<?php get_sidebar(); ?>
+	
 	</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
