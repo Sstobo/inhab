@@ -1,12 +1,10 @@
-# RED Starter
+# Inhabitent Site
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+My Inhabitent site
 
-## Installation
+### 1. Learning and reflections
 
-### 1. Download me (don't clone me!)
-
-Then add me to your `wp-content` directory.
+This
 
 ### 2. Rename the `redstarter-master` directory
 
