@@ -14,6 +14,7 @@ As I became more confident navigating WP I really wanted to restart from the beg
 
 Things I got stuck on:
 
+Just as im about to submit I see I have broken my side bar on my journal page. 
 I couldnt figure out how to differentiate between the single blog post and the single product page.
 My search bar is a plug-in. I need to review my JS notes and complete my own version.
 I didn't budget time for the adventure single posts. 

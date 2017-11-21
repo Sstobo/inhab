@@ -13,7 +13,7 @@ get_header();
 
 
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="site-content">
 		<main id="main" class="site-main" role="main">
 		
 
@@ -40,8 +40,8 @@ get_header();
 
 		<?php endif; ?>
 
+		<?php get_sidebar(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
