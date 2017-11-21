@@ -30,18 +30,20 @@ get_header();
 
 				<?php get_template_part( 'template-parts/content' ); ?>
 				<a href="<?php the_permalink(); ?>" class="button">Read More<span class="dashicons dashicons-arrow-right-alt next-arrow"></span></a>
-			<?php endwhile; ?>
 
+			<?php endwhile; ?>
+	
 			<?php the_posts_navigation(); ?>
+			
 
 		<?php else : ?>
-	
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
 
-		<?php get_sidebar(); ?>
+	
 		</main><!-- #main -->
+		<?php get_sidebar(); ?>
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>

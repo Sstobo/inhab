@@ -355,7 +355,9 @@
           margin: 0 auto;
           margin-bottom: 80px;
           bottom: 34px;
-          font-family: $font-main;
+          font-family: $font-main;    
+          text-align: left;
+          right: 32px;
     }
    }
     
@@ -371,15 +373,14 @@
         color: white;
         padding: 3px;
       }
-      .site-content {
-        display: flex;
-        padding-top: 50px;
-        p {
-          text-align: left;
-        }
+          .site-content {
+            display: flex;
+            flex-direction: row;
+            padding-top: 50px;
+            margin-bottom: 60px;       
       } 
       .site-main {
-        width: 910px;
+        width: 1120px;
       }
   
     }

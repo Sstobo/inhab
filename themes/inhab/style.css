@@ -998,7 +998,9 @@ aside.widget_archive {
   margin: 0 auto;
   margin-bottom: 80px;
   bottom: 34px;
-  font-family: "Merriweather", serif; }
+  font-family: "Merriweather", serif;
+  text-align: left;
+  right: 32px; }
 
 .blog .entry-meta {
   background-color: #248A83;
@@ -1013,12 +1015,15 @@ aside.widget_archive {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 50px; }
-  .blog .site-content p {
-    text-align: left; }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 50px;
+  margin-bottom: 60px; }
 
 .blog .site-main {
-  width: 910px; }
+  width: 1120px; }
 
 .product-info {
   width: 100vw;
