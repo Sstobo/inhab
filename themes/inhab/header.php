@@ -20,7 +20,7 @@
 
 	<body <?php body_class(); ?>>
 		<div id="page" class="hfeed site">
-			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
+		
 
 			<header id="masthead" class="site-header" role="banner">
 			
@@ -32,13 +32,16 @@
 
 				
 				<a class="header-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-				
+			
+					<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					
-				</nav><!-- #site-navigation -->
 
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					<i  id="search-button" class="fa fa-search" aria-hidden="true">
+						
+					<span id="search-input"><?php echo esc_html( 'Search' ); ?></span></i>
+					<?php get_search_form(); ?><span class="dashicons dashicons-search search-icon search-button"></span>
+			</nav>
 			</header><!-- #masthead -->
 
 		</div>

@@ -773,6 +773,13 @@ h1.entry-title {
   background-image: url("../../images/logos/inhabitent-logo-tent.svg");
   background-size: 100% 100%; }
 
+nav span.dashicons {
+  color: #248A83;
+  font-size: 30px;
+  position: relative;
+  right: 20px;
+  top: 10px; }
+
 .main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -785,6 +792,12 @@ h1.entry-title {
       -ms-flex-pack: end;
           justify-content: flex-end;
   height: 100%; }
+  .main-navigation .search-bar-wrapper {
+    background-color: peachpuff;
+    width: 200px;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: 10px; }
   .main-navigation a {
     text-decoration: none;
     color: #248A83;
@@ -792,7 +805,6 @@ h1.entry-title {
     padding-left: 35px;
     padding-top: 12px;
     position: relative;
-    right: 60px;
     font-weight: 300;
     font-size: 16px;
     text-transform: uppercase; }
@@ -813,7 +825,8 @@ footer {
   footer p {
     color: #ffffff; }
   footer h2 {
-    color: #d99054; }
+    color: #d99054;
+    font-size: 22px; }
   footer i {
     padding: 5px;
     color: #ffffff;
@@ -932,21 +945,15 @@ footer {
     .site-content-contact .contact-container .entry-content {
       width: 710px;
       margin: 0 auto; }
-
-.page h2 {
-  font-size: 2rem; }
-
-.page form.wpcf7-form p label {
-  text-transform: uppercase;
-  font-family: 'Novocento', sans-serif;
-  color: #2f1339; }
-
-.page form.wpcf7-form .wpcf7-form-control {
-  padding: 14px 24px;
-  font-size: 1rem; }
-
-.page form.wpcf7-form input {
-  margin-top: 10px; }
+  .site-content-contact form.wpcf7-form p label {
+    text-transform: uppercase;
+    font-family: 'Novocento', sans-serif;
+    color: #2f1339; }
+  .site-content-contact form.wpcf7-form .wpcf7-form-control {
+    padding: 14px 24px;
+    font-size: 1rem; }
+  .site-content-contact form.wpcf7-form input {
+    margin-top: 10px; }
 
 .sidebar-container {
   text-align: start;
@@ -1581,7 +1588,7 @@ aside.widget_archive {
   left: 10px; }
 
 .single-post .site-main {
-  width: 1120px; }
+  width: 1020px; }
 
 .single-post .site-content {
   display: -webkit-box;
@@ -1612,6 +1619,7 @@ aside.widget_archive {
 
 .single-post .entry-content p {
   position: relative;
+  width: 810px;
   height: auto;
   margin-left: 100px;
   margin-bottom: 30px;
@@ -1750,3 +1758,6 @@ aside.widget_archive {
       background-color: #f4f4f4;
       border: 1px solid #a1a1a1;
       border-radius: 0; }
+
+footer h2 {
+  font-size: 20px; }

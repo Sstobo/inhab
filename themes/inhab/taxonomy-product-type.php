@@ -9,7 +9,8 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		<h1> <?php the_title(); ?> </h1>
+		<h1> <?php single_term_title(); ?> </h1>
+			
 								<?php
 										$terms = get_terms( array(
 												'taxonomy' => 'product-type',
@@ -35,7 +36,7 @@ get_header(); ?>
 										<?php while ( have_posts() ) : the_post(); ?>				
 
 				<div class="product-block">
-							<a href="<?php the_permalink(); ?>">	<?php the_post_thumbnail( 'medium'); ?></a></br>
+							<a href="<?php the_permalink(); ?>">	<?php the_post_thumbnail(); ?></a></br>
 				<div class="content-block">
 							<span class="archive-item"><?php the_title()  ?> </span><span class="price-meta"> 
 							<?php

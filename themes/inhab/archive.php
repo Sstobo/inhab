@@ -13,7 +13,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-			<h1> <?php the_title(); ?> </h1>
+			<h1> <?php echo get_the_archive_title(); ?> </h1>
 			</header><!-- .page-header -->
 							
 						<?php endif; ?>

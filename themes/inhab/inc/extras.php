@@ -63,5 +63,15 @@ function inhab_dynamic_css() {
 	wp_add_inline_style( 'tent-style', $hero_css );
 }
  add_action( 'wp_enqueue_scripts', 'inhab_dynamic_css' );
-		
-	
+		 
+
+function inhab_mod_archive( $title ) {
+	if (is_post_type_archive('product')) {
+		$title = 'Shop Stuff';
+	}
+	return $title;
+	}
+
+
+add_filter( 'get_the_archive_title', 'inhab_mod_archive');
+

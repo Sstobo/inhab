@@ -3,6 +3,7 @@
 --------------------------------------------------------------*/
 
 // ************ GLOBAL VARIABLES
+
  body {
   font-size: 16px;
  }
@@ -90,20 +91,35 @@
       background-image:url("../../images/logos/inhabitent-logo-tent.svg");
       background-size: 100% 100%;
   }
+  nav span.dashicons {
+      color: $green;
+      font-size: 30px;
+     position: relative;
+     right: 20px;
+     top: 10px;
+    }
+  
   // Link bar parnt line 35
   .main-navigation {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     height: 100%;
+    
+    .search-bar-wrapper {
+      background-color: peachpuff;
+      width: 200px;
+      height: 50px;
+      margin-left: 50px;
+      margin-top: 10px;
+    }
        a 
        { text-decoration: none;
        color: $green;
        font-size: 1.3rem;
        padding-left: 35px;
        padding-top: 12px;
-       position: relative;
-       right: 60px;
+       position: relative;     
        font-weight: 300;
        font-size: 16px;
        text-transform: uppercase;
@@ -132,6 +148,7 @@
           }
     h2 {
       color: $orange;
+      font-size: 22px;
           }
     i {
       padding: 5px; 
@@ -263,11 +280,8 @@
                  margin: 0 auto;
                   }    
               }
-    }
-    .page {
-      h2 {
-        font-size: 2rem;
-      }
+    
+    
     form.wpcf7-form {
       p label {
        text-transform: uppercase;
@@ -981,7 +995,8 @@
 
   .single-post {
     .site-main {
-      width: 1120px;
+      width: 1020px;
+
     }
     .site-content {
       display: flex;
@@ -1009,7 +1024,7 @@
     }
     .entry-content p {
       position: relative;
-
+      width: 810px;
       height: auto;
       margin-left: 100px;
       margin-bottom: 30px;
@@ -1168,6 +1183,9 @@
       }      
     }
   }
-}
+ }
 
- 
+ footer h2 {
+  font-size: 20px;
+ }
+
