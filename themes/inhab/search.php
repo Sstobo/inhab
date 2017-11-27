@@ -22,7 +22,6 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content', 'search' ); ?>
 				<a class = "search-button" href="<?php the_permalink(); ?>">Read More <span class="dashicons dashicons-arrow-right-alt"></span></a>
 			<?php endwhile; ?>
-
 	
 		<?php else : ?>
 
@@ -33,6 +32,5 @@ get_header(); ?>
 		<?php get_sidebar(); ?>
 	
 	</section><!-- #primary -->
-
 
 <?php get_footer(); ?>

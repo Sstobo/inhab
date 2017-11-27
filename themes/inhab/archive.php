@@ -14,7 +14,7 @@ get_header(); ?>
 
 			<header class="page-header">
 			<h1> <?php echo get_the_archive_title(); ?> </h1>
-			</header><!-- .page-header -->
+			</header>
 							
 						<?php endif; ?>
 
@@ -29,8 +29,7 @@ get_header(); ?>
       <div class="link-blocks">
 
             <?php foreach ( $terms as $term ) : ?>											                    
-										<p><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?></a></p>
-												
+										<p><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?></a></p>								
             <?php endforeach; ?>
 						<?php endif; ?>
 
@@ -47,16 +46,12 @@ get_header(); ?>
 				$posts = get_posts( $args );
 				foreach ( $posts as $post ) : setup_postdata( $post ); ?>
 			
-	
-					
-				
 						<div class="block-wrapper">
-									
-									<div class="product-block">
+							<div class="product-block">
 											
 											<a href="<?php the_permalink(); ?>">	<?php the_post_thumbnail( 'medium'); ?></a></br>
 										
-											<div class="content-block"><p class="archive-dots">.....................................		</p>
+										<div class="content-block"><p class="archive-dots">.....................................		</p>
 													<span class="archive-item"><?php the_title()  ?> </span><span class="price-meta"> <?php 
 															$meta_print_value=get_post_meta(get_the_ID(),'price',true);
 															echo($meta_print_value);

@@ -13,6 +13,7 @@ get_header(); ?>
 			
 								<?php
 										$terms = get_terms( array(
+												'posts_per_page' => 16,
 												'taxonomy' => 'product-type',
 												'hide_empty' => 0,) );
 										if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
@@ -33,7 +34,7 @@ get_header(); ?>
 
 		<div class="product-wrapper">
 					
-										<?php while ( have_posts() ) : the_post(); ?>				
+								<?php while ( have_posts() ) : the_post(); ?>				
 
 				<div class="product-block">
 							<a href="<?php the_permalink(); ?>">	<?php the_post_thumbnail(); ?></a></br>
@@ -48,17 +49,8 @@ get_header(); ?>
 																									
 							 <?php endwhile; ?>
 															
-								</div>
-							
-						</div>
-					
-		
-
-
-
-						
-		
-		
-	</div><!-- #primary -->
+			</div>	
+		</div>
+	</div>
 
 <?php get_footer(); ?>

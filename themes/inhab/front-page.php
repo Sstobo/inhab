@@ -14,14 +14,14 @@ get_header(); ?>
 				<img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg'?> "/>
 		</div>
 
-
-<!-- // THE LOOP 			 -->	
 		<main id="main" class="site-main-front-page" role="main">
 		<?php if ( have_posts() ) : ?>
 		<?php if ( is_home() && ! is_front_page() ) : ?>
+
 				<header>
 					<h1 class="front-page screen-reader-text"><?php single_post_title(); ?>
 				</header>
+
 			<?php endif; ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>      
@@ -32,11 +32,9 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 		<?php endif; ?>
 
-
-
 <!-- PRODUCT ROLL -->
-<h1>Shop Stuff</h1>
-<section class="product-info container">
+			<h1>Shop Stuff</h1>
+				<section class="product-info container">
           
             <?php
                $terms = get_terms( array(
@@ -76,7 +74,7 @@ get_header(); ?>
 		$posts = get_posts( $args );
 		foreach ( $posts as $post ) : setup_postdata( $post ); ?>
 							
-				<div class="journal-block">
+			<div class="journal-block">
 				<?php the_post_thumbnail( 'medium'); ?>
 				<div class="content-block">
 					<p><?php the_date(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></p>
@@ -87,9 +85,7 @@ get_header(); ?>
 
 <?php endforeach; 
 wp_reset_postdata();?>
-
 </ul>	
-
 </div>
 
 <!-- ADVENTURE BLOG  -->
@@ -100,8 +96,6 @@ wp_reset_postdata();?>
 	<div class="adventure-two"><a class="pic-link" href="#">Taking in the View at Big Mountain</a><a href="#" class="button">Read More</a></div>
 	<div class="adventure-three"><a class="pic-link" href="#">Star-Gazing at the Night Sky</a><a href="#" class="button">Read More</a></div>
 </div>
-
-
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

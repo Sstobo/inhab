@@ -5,18 +5,13 @@
  * @package RED_Starter_Theme
  */
 ?>
-
-
 <?php
 get_header();
 ?>
 
-
-
 	<div id="primary" class="site-content">
 		<main id="main" class="site-main" role="main">
 		
-
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
@@ -35,12 +30,10 @@ get_header();
 	
 			<?php the_posts_navigation(); ?>
 			
-
 		<?php else : ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-
 	
 		</main><!-- #main -->
 		<?php get_sidebar(); ?>

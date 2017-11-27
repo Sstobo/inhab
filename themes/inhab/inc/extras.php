@@ -57,7 +57,6 @@ function inhab_dynamic_css() {
 			url({$image}) no-repeat center bottom;
 			background-size: cover, cover;
 			height: 100vh;
-			background-color: magenta;
 	}";
 
 	wp_add_inline_style( 'tent-style', $hero_css );
