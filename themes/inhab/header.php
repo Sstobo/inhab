@@ -34,11 +34,12 @@
 
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
-					<i  id="search-button" class="fa fa-search" aria-hidden="true">			
-					<span id="search-input"><?php echo esc_html( 'Search' ); ?></span></i>
+				
+				
 
-					<?php get_search_form(); ?><span class="dashicons dashicons-search search-icon search-button"></span>
+				<span class="dashicons dashicons-search search-icon search-button"></span>	<?php get_search_form(); ?>
 					
+		
 			</nav>
 			</header><!-- #masthead -->
 

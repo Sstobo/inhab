@@ -13,14 +13,20 @@
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		
 
 		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
+		
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+	<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+	<span class="price-meta"> 
+							<?php
+								$meta_print_value=get_post_meta(get_the_ID(),'price',true);
+								echo($meta_print_value);
+							?></span>
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
@@ -28,6 +34,11 @@
 				'after'  => '</div>',
 			) );
 		?>
+
+			<div class="single-links">
+			<a href="#"><span class="dashicons dashicons-facebook-alt"></span>like</a>
+			<a href="#"><span class="dashicons dashicons-twitter"></span>tweet</a>
+			<a href="#"><span class="dashicons dashicons-location"></span>pin</a>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">

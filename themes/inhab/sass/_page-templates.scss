@@ -27,9 +27,7 @@
      text-transform: uppercase;
      font-size: 1.2rem;
   }
-  span {
-    font-family: $font-main;
-  }
+  
   h3 {
     font-family: 'Novocento', sans-serif;
     color: white;
@@ -44,6 +42,7 @@
   .bold {
     font-weight: bold;
   }
+
 /* ************ FRONT PAGE */
     .frontpage-hero {
       background-image:
@@ -94,17 +93,27 @@
      top: 10px;
     }
   .main-navigation {
+    padding-right: 60px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     height: 100%;   
-    .search-bar-wrapper {
-      background-color: peachpuff;
-      width: 200px;
-      height: 50px;
-      margin-left: 50px;
-      margin-top: 10px;
-    }
+      .search-icon { 
+        margin-left: 40px;
+        position: relative;   
+        bottom: 5px;
+      }
+      .search-field {
+        background-color: white;
+        border: none;
+        margin-bottom: 10px;
+        position:relative;
+        bottom: 3px;
+        transition: 1s;
+        font-size: 16px;
+        width: 200px;
+        height: 28px;
+      }
        a 
        { text-decoration: none;
        color: $green;
@@ -190,6 +199,7 @@
   .site-about {
     padding-top: 20px;
      h2 {
+       color: $purple;
       font-size: 2rem;
       text-transform: uppercase;
       text-align: center;
@@ -207,7 +217,7 @@
       color: white;
       text-transform: uppercase;
       position: relative;
-      top: 300px;
+      top: 200px;
       font-size: 3rem;
     }   
  }
@@ -252,7 +262,7 @@
           }
               .contact-container {
                 text-align: left;
-                min-width: 910px;  
+                min-width: 980px;  
                   h2.title {
                     text-transform: uppercase;
                     margin-left: 100px;
@@ -262,8 +272,6 @@
                  margin: 0 auto;
                   }    
               }
-    
-    
     form.wpcf7-form {
       p label {
        text-transform: uppercase;
@@ -284,12 +292,12 @@
    // Primary sidebar container
   .sidebar-container {
     text-align: start;
-    width: 300px;
-    min-width: 300px;
+    width: 320px;
+    min-width: 320px;
     padding-left: 30px;
     border-left: 1px solid $light-grey;
     display: block;
-    padding-top: 50px;
+    padding-top: 0;
       h2 {
         letter-spacing: 2px;
         font-size: 1.5rem;
@@ -318,6 +326,19 @@
 // ************ JOURNAL  
   // Text above feature image 
   .blog {
+    .entry-content p {
+      color: black;
+      position: relative;
+      width: 760px;
+      margin-left: 100px;
+      margin-bottom: 80px;
+      bottom: 34px;
+      font-family: $font-main;    
+      text-align: left;  
+ }
+    .category-title ul {
+      display: none;
+    }
     a.button {
       color: black;
       border: 1px solid black;
@@ -336,10 +357,10 @@
       .entry-header {
         position: relative;
             img {
-              padding-left: 100px;
-              width: 860px;
+              margin-left: 100px;
+              width: 760px;
             }
-            h2 { 
+            h2 {     
               width: 400px;
               background-color: #248A83;
               font-size: 2rem;
@@ -351,20 +372,12 @@
                   color: white;
                   text-decoration: none;
                 }
+                 
+                }
               }
             }
             // Blog content    
-        .entry-content p {
-          color: black;
-          position: relative;
-          width: 760px;
-          margin: 0 auto;
-          margin-bottom: 80px;
-          bottom: 34px;
-          font-family: $font-main;    
-          text-align: left;  
-    }
-   }
+       
     
     // Generated container name
     .blog {
@@ -374,7 +387,7 @@
         position: relative;
         width: 400px;
         left: 460px;
-        bottom: 38px;
+        bottom: 36px;
         color: white;
         padding: 3px;
       }
@@ -385,6 +398,7 @@
             margin-bottom: 60px;       
       } 
       .site-main {
+        padding-top: 40px;
         width: 1120px;
       }
   
@@ -507,10 +521,19 @@
 
 // ************ PRODUCTS ARCHIVE
  .post-type-archive {
+   h1 {
+     font-weight: bold;
+   }
+   .product-border {
+     border-bottom: 1px dashed $light-grey;
+     margin-bottom: 30px;
+     width: 1120px;
+   }
   .content-area {
     padding-top: 30px;
     display: flex;
     flex-direction: row;
+    margin-bottom: 40px;
         .site-main {
           width: 1120px;
           margin: 0 auto;   
@@ -531,15 +554,16 @@
     .link-blocks {
       display: flex;
       height: 100px;
-      width: 300px;
+      width: 330px;
       margin: 0 auto;
       justify-content: space-between;
+      flex-direction: row;     
             a {
               font-family: 'Novocento', sans-serif;
               font-size: 19px;
               color: $green;
               margin: 0 auto;
-              padding: 12px;
+              padding: 12px;      
               text-transform: uppercase;
               text-decoration: none;
             }
@@ -549,25 +573,27 @@
     }
     .product-block {
       height: 300px;
-      width: 250px;
+      width: auto;
       margin: 10px;
       display: block;
           img {
-              height: 200px;
+              height: 240px;
+              width: 260px;
+              
           }
-          .content-block {
+        .content-block {
             height: 55px;
             font-size: 1rem;
             border: 1px solid $light-grey;
             border-top: 4px solid $light-grey;
-            padding-left: 12px;
+            padding: 0 12px 0 12px;  
+            bottom: 6px;
+            padding-top: 15px;
+            display: flex;
             position: relative;
-            bottom: 8px;
+            justify-content: space-between;
           }
           .price-meta {
-            position: relative;
-            left:50px;
-            bottom: 50px;
             background: white;
           }
           .archive-dots {
@@ -576,40 +602,52 @@
           .archive-item {
             position: relative;
             background: white;
-            bottom: 50px;
           }     
     }
   }
  }
 // ************ SINGLE PRODUCT PAGE
-    .single-content-area {
-      padding-top: 50px;
-    }  
-    .single-main {
-      width: 1120px;
-      display: flex;
-      flex-direction: row;
-      margin: 0 auto;
-      justify-content: space-between;
-
-        .single-product {
-          width: 530px;
+ .single-product {   
+ .site-content {
+    .site-main {
+     padding-top: 50px;
+     width: 100vw;   
+     height: 700px;
+      article {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+      }
+        .entry-header {
+          width: 50%;
           padding-top: 50px;
-          display: block;
+          display: inline-block;
+          img {
+            padding-top: 20px;
+            width: 530px;
+            margin-left: 100px;
+          }
         }
-        .single-info{
-          
+        .entry-content{
+          margin-left: 40px;
           width: 530px;
           display: block;
+          p {
+            font: $font-main;
+          }
+          .entry-title  {
+            color: $orange;
+            text-transform: uppercase;
+            font-size: 38px;
+            font-family: 'Novocento', sans-serif;
+            display: block;
+            padding: 0;
+            margin-bottom: 20px;
+
         }
-        .single-title {
-          color: $orange;
-          text-transform: uppercase;
-          font-size: 38px;
-          font-family: 'Novocento', sans-serif;
-        }
+      }
         .price-meta {
-          font-size: 2rem;
+          font-size: 1.5rem;
         }
         .single-links {
           margin-bottom: 150px;
@@ -630,10 +668,23 @@
         .dashicons {
           margin-right: 10px;
         }      
-    }
-
+    }}
+  }
 // ************ TAXONOMY PRODUCT TYPE
     .tax-product-type {
+      h1 {
+        font-weight: bold;
+      }
+      p {
+    
+        text-align: center;
+      }
+      span {
+        font-family: $font-main;
+      }
+      .page-title {
+        background-color: green;
+      }
       .site-main {
         width: 1120px;
         margin: 0 auto;
@@ -678,8 +729,8 @@
                     .content-block {
                         height: 55px;
                         font-size: 1rem;
-                        border: 1px solid $light-grey;
-                        border-top: 4px solid $light-grey;
+                        border: 1px solid $medium-grey;
+                        border-top: 4px solid $medium-grey;
                         padding: 0 12px 0 12px;
                         position: relative;
                         bottom: 8px;
@@ -944,9 +995,29 @@
 // ************ SINGLE BLOG POST
 
   .single-post {
+    
+    footer.entry-footer {
+      margin-left: 100px;
+      height: 60px;
+       span {
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: 'Novocento', sans-serif;
+      font-size: 16px;
+      padding-right: 10px;
+       }
+    a{
+        color: $green;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: 'Novocento', sans-serif;
+        font-size: 16px;
+      } 
+       }
     .site-main {
       width: 1020px;
     }
+    
     .site-content {
       display: flex;
       flex-direction: row;
@@ -969,6 +1040,30 @@
     .entry-header {
       margin-top: 40px;
     }
+    .entry-content {
+    .p1 { 
+      font-size: 2rem;
+      position: absolute;
+      top: 120px;
+      color: white;
+      font-family: 'Novocento', sans-serif;
+      line-height: 1.75;
+      text-align: left;
+      text-transform: uppercase;
+      font-size: 2.5rem;
+      font-weight: 200;
+      b {
+        font-size: 1.9rem;
+        height: 100px;
+        background-color: $green;
+        padding: 30px 30px 30px 10px;
+      }
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
     .entry-content p {
       position: relative;
       width: 810px;
@@ -978,6 +1073,7 @@
       bottom: 34px;
       font-family: $font-main;    
       text-align: left; 
+     
     }
     .single-links {
       position: relative;
@@ -1004,20 +1100,7 @@
           img {
             padding-left: 100px;
             width: 860px;
-          }
-          h2 { 
-            width: 400px;
-            background-color: #248A83;
-            font-size: 2rem;
-            position: absolute;
-            top: 10px;
-            left: 100px;
-            padding: 10px;
-              a {
-                color: white;
-                text-decoration: none;
-              }
-            }
+          } 
      .entry-meta {
         background-color: #248A83;
         position: relative;
@@ -1027,10 +1110,15 @@
         color: white;
         padding: 3px;
        }
+       a {
+        color: white;
+      }
      }
   }
 
 // ************ SUBMISSION FORM
+
+
  .single {
     .form-submit {
       input#submit {
@@ -1134,3 +1222,143 @@
   font-size: 20px;
  }
 
+
+ .single .entry-content {
+
+  .p1 b { 
+    color:white;
+    font-family: 'Novocento', sans-serif;
+ }
+  
+ }
+
+
+ .comments-area {
+  p.comment-form-comment {
+    .comment {
+    background-color: $light-grey;
+ }}
+  li.comment {
+    list-style: none;
+  }
+  a.comment-reply-link {
+    border: none;
+    color: $green;
+    font-size: 18px;
+    font-family: $font-main;
+    text-transform: none;
+    position: relative;
+    right: 20px;
+  }
+  .comment-metadata {
+    a {
+      display: none;
+    }
+  }
+  time {
+    color: $medium-grey;
+   
+  }
+  .fn {
+    font-weight: bold;
+    font-family: 'Novocento', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+  }
+  .comment-author-avatar .avatar {
+  border-radius: 50px;
+  position: relative;
+  right: 80px;
+  top: 80px;
+ }}
+// ************ SINGLE POST, TAGS AND CATEGORYS
+ .archive, .tags, .categorys {
+  .category-title {
+    width: 800px;
+    font-weight: bold;
+    font-size: 38px;
+    text-align: start;
+    margin-left: 100px; 
+    border-bottom: 1px solid $light-grey;
+    display: inline-block;
+      ul {
+        list-style: none;
+        display: inline-block;
+        position: relative;
+        right: 90px;
+        a {
+          color: $font-color;
+          text-decoration: none;         
+        }
+      }
+  }
+  a.button {
+    color: black;
+    border: 1px solid black;
+    padding: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    left: 100px;
+    bottom: 60px;
+  }
+  a.button:hover {
+    color: white;
+    border: none;
+    background-color: $green;
+  }  
+    .entry-header {
+      position: relative;
+          img {
+            margin-left: 100px;
+            width: 820px;
+          }
+          h2 { 
+            font-size: 1.9rem;
+            position: absolute;
+            top: 10px;
+            left: 100px;
+            margin-top: 40px;
+              a {
+               
+                color: white;
+                background-color: #248A83;
+                text-decoration: none;
+                padding: 30px 30px 30px 10px;
+              }
+            }
+          }
+          // Blog content    
+      .entry-content p {
+        color: black;
+        position: relative;
+        width: 860px;
+        margin-left: 100px;
+        margin-bottom: 80px;
+        bottom: 34px;
+        font-family: $font-main;    
+        text-align: left;  
+  }
+ }
+  .archive, .category, .tag{
+      // Date info
+    .entry-meta {
+      background-color: #248A83;
+      position: relative;
+      width: 400px;
+      left: 520px;
+      bottom: 36px;
+      color: white;
+      padding: 3px;
+    }
+        .site-content {
+          display: flex;
+          flex-direction: row;
+          padding-top: 50px;
+          margin-bottom: 60px;       
+    } 
+    .site-main {
+      width: 1120px;
+    }
+
+  }
