@@ -96,7 +96,7 @@ wp_reset_postdata();?>
 	<div class="adventure-two"><a class="pic-link" href="#">Taking in the View at Big Mountain</a><a href="#" class="button">Read More</a></div>
 	<div class="adventure-three"><a class="pic-link" href="#">Star-Gazing at the Night Sky</a><a href="#" class="button">Read More</a></div>
 </div>
-
+<a href="#" class="adventure-button">More Adventures</a>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

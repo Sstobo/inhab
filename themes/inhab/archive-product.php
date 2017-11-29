@@ -52,7 +52,7 @@ get_header(); ?>
 											<a href="<?php the_permalink(); ?>">	<?php the_post_thumbnail( 'medium'); ?></a></br>
 										
 										<div class="content-block">
-													<span class="archive-item"><?php the_title()  ?> </span><span class="price-meta"> <?php 
+													<span class="archive-item"><?php the_title()  ?> </span><span class="archive-dots">........................</span><span class="price-meta"> <?php 
 															$meta_print_value=get_post_meta(get_the_ID(),'price',true);
 															echo($meta_print_value);
 												?></span>

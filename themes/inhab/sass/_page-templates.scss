@@ -137,9 +137,7 @@
       }
     }
 // ************ FOOTER
-  body {
-      min-width: 1120px;
-    }    
+
   footer {
         height: 350px;    
     p {
@@ -157,7 +155,12 @@
           }
     a {
       color: $white;
+      text-decoration: none;
           }
+    a:hover {
+      color: white;
+      text-decoration: underline;
+    }
         }
     .footer-container {
       background-image:url("../../images/dark-wood@2x.png");
@@ -231,7 +234,6 @@
       flex-direction: columns;
       padding-top: 50px;
       margin-bottom: 60px;
-      // Content from W
           #wpgmza_map {
             margin-bottom: 30px;
           }
@@ -262,7 +264,7 @@
           }
               .contact-container {
                 text-align: left;
-                min-width: 980px;  
+                min-width: 880px;  
                   h2.title {
                     text-transform: uppercase;
                     margin-left: 100px;
@@ -291,16 +293,29 @@
 // ************ SIDEBAR
    // Primary sidebar container
   .sidebar-container {
-    text-align: start;
+    text-align: left;
     width: 320px;
     min-width: 320px;
-    padding-left: 30px;
+    padding-left: 50px;
     border-left: 1px solid $light-grey;
     display: block;
-    padding-top: 0;
+    padding-top: 20px;
+    .tent-biz-hours-class, .widget_archive {
+      position: relative;
+      bottom: 60px;
+    }
+    .div-of-week {
+      font-weight: bold;
+    }
+    .address {
+      position: relative;
+      left: 40px;
+      bottom: 20px;
+    }
       h2 {
         letter-spacing: 2px;
         font-size: 1.5rem;
+        color: #2f1339;
       }
         a {
           color: $green;
@@ -399,7 +414,7 @@
       } 
       .site-main {
         padding-top: 40px;
-        width: 1120px;
+        width: 890px;
       }
   
     }
@@ -583,6 +598,7 @@
           }
         .content-block {
             height: 55px;
+            max-width: 260px;
             font-size: 1rem;
             border: 1px solid $light-grey;
             border-top: 4px solid $light-grey;
@@ -590,18 +606,24 @@
             bottom: 6px;
             padding-top: 15px;
             display: flex;
-            position: relative;
             justify-content: space-between;
           }
           .price-meta {
             background: white;
+            text-align: right;     
+            z-index: 200;
+
           }
           .archive-dots {
-            z-index: -1;
+            z-index: 1;
+            right: 70px;
+            overflow: hidden;
           }
           .archive-item {
-            position: relative;
+       
+            white-space: nowrap;
             background: white;
+            z-index: 200;
           }     
     }
   }
@@ -675,8 +697,7 @@
       h1 {
         font-weight: bold;
       }
-      p {
-    
+      div.page-description p {
         text-align: center;
       }
       span {
@@ -740,22 +761,39 @@
                       }
                     .price-meta {
                       position: relative;
-                      
                       background: white;
+                    
                     }
                     .archive-dots {
                       z-index: -1;
+                      overflow: hidden;
                     }
                     .archive-item {
+                      white-space: nowrap;
                       position: relative;
-                      background: white;                  
+                      background: white;                
                     }
               }
             }
           }
 
 // ************ FRONT PAGE ADVENTURES
-      .home {     
+      .home {    
+        .adventure-button {
+          text-transform: uppercase;
+          text-decoration: none;
+          color: white;
+          background-color: $green;
+          font-size: 19px;
+          font-family: "Novocento", sans-serif;
+          padding: 12px 24px 12px 24px;
+          position: relative;
+          bottom: 60px;
+          left: 40px;
+        } 
+        .adventure-button:hover {
+          background-color: $hovergreen;
+        }
         .adventure-wrapper {          
           height: 560px;
           width: 1180px;
@@ -766,7 +804,7 @@
           grid-template-rows: 1fr 1fr;
           grid-template-columns: 1fr 1fr 1fr 1fr;
           grid-gap: 20px 20px;
-          margin: 60px auto;
+          margin: 60px auto 100px auto;
         a {
           font-family: $font-main;
           text-decoration: none;
@@ -1015,7 +1053,7 @@
       } 
        }
     .site-main {
-      width: 1020px;
+      width: 890px;
     }
     
     .site-content {
@@ -1066,7 +1104,7 @@
     }
     .entry-content p {
       position: relative;
-      width: 810px;
+      width: 760px;
       height: auto;
       margin-left: 100px;
       margin-bottom: 30px;

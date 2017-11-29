@@ -34,9 +34,6 @@
 
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
-				
-				
-
 				<span class="dashicons dashicons-search search-icon search-button"></span>	<?php get_search_form(); ?>
 					
 		

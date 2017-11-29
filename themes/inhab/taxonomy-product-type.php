@@ -11,7 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 		<h1> <?php single_term_title(); ?> </h1>
 								
-								<p class="page-description"><?php the_archive_description();?></p>
+								<div class="page-description"><?php the_archive_description();?></div>
 		
 		</main><!-- #main -->
 
@@ -22,7 +22,7 @@ get_header(); ?>
 				<div class="product-block">
 							<a href="<?php the_permalink(); ?>">	<?php the_post_thumbnail(); ?></a></br>
 				<div class="content-block">
-							<span class="archive-item"><?php the_title()  ?> </span><span class="price-meta"> 
+							<span class="archive-item"><?php the_title()  ?> </span><span class="archive-dots">........................</span><span class="price-meta"> 
 							<?php
 								$meta_print_value=get_post_meta(get_the_ID(),'price',true);
 								echo($meta_print_value);
