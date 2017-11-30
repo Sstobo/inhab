@@ -583,6 +583,44 @@ a {
   content: "";
   display: table; }
 
+body {
+  font-size: 16px; }
+
+p {
+  color: #404040;
+  font-family: "Merriweather", sans-serif;
+  font-size: 1rem;
+  line-height: 1.75; }
+
+h1 {
+  color: #404040;
+  font-family: 'Novocento', sans-serif;
+  line-height: 1.75;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 30px;
+  font-size: 2.5rem;
+  font-weight: 200; }
+
+h2 {
+  font-family: 'Novocento', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem; }
+
+h3 {
+  font-family: 'Novocento', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 16px;
+  padding-bottom: 20px; }
+
+h1.entry-title {
+  display: none; }
+
+.bold {
+  font-weight: bold; }
+
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
@@ -697,44 +735,6 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-body {
-  font-size: 16px; }
-
-p {
-  color: #404040;
-  font-family: "Merriweather", sans-serif;
-  font-size: 1rem;
-  line-height: 1.75; }
-
-h1 {
-  color: #404040;
-  font-family: 'Novocento', sans-serif;
-  line-height: 1.75;
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 30px;
-  font-size: 2.5rem;
-  font-weight: 200; }
-
-h2 {
-  font-family: 'Novocento', sans-serif;
-  text-transform: uppercase;
-  font-size: 1.2rem; }
-
-h3 {
-  font-family: 'Novocento', sans-serif;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 200;
-  font-size: 16px;
-  padding-bottom: 20px; }
-
-h1.entry-title {
-  display: none; }
-
-.bold {
-  font-weight: bold; }
-
 /* ************ FRONT PAGE */
 .frontpage-hero {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.15))), url("../../images/home-hero.jpg");
@@ -794,7 +794,7 @@ nav span.dashicons {
     margin-left: 40px;
     position: relative;
     bottom: 5px; }
-  .main-navigation .search-field {
+  .main-navigation .search-field, .main-navigation .search-field1 {
     background-color: white;
     border: none;
     margin-bottom: 10px;
@@ -1606,8 +1606,23 @@ aside.widget_archive {
 .error404 {
   text-align: left;
   text-decoration: none; }
+  .error404 .content-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 50px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .error404 .page-title {
+    font-size: 36px; }
+  .error404 .widgettitle, .error404 .widget-title {
+    color: #2f1339; }
   .error404 .site-main {
-    padding-top: 50px; }
+    padding: 50px;
+    width: 890px;
+    padding-top: 20px; }
   .error404 h1 {
     text-align: left;
     font-weight: bold;
@@ -1615,7 +1630,7 @@ aside.widget_archive {
   .error404 h2 {
     letter-spacing: 2px;
     font-size: 1.6rem; }
-  .error404 a {
+  .error404 .widget a {
     color: #248A83;
     text-decoration: none; }
   .error404 ul {

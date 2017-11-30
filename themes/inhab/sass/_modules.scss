@@ -60,3 +60,43 @@
 	content: "";
 	display: table;
 }
+// ************ GLOBAL VARIABLES
+body {
+  font-size: 16px;
+ }
+  p {
+    color: $font-color;
+    font-family: $font-main;
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+  h1 {
+    color: $font-color;
+    font-family: 'Novocento', sans-serif;
+    line-height: 1.75;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+    font-size: 2.5rem;
+    font-weight: 200;
+  }
+  h2 {
+     font-family: 'Novocento', sans-serif;
+     text-transform: uppercase;
+     font-size: 1.2rem;
+  }
+  
+  h3 {
+    font-family: 'Novocento', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+  h1.entry-title {
+    display: none;
+  }
+  .bold {
+    font-weight: bold;
+  }

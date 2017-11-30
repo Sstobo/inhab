@@ -11,7 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 		<h1> <?php single_term_title(); ?> </h1>
 								
-								<div class="page-description"><?php the_archive_description();?></div>
+								<div class="page-description"><?php the_archive_description();?></define_syslog_variables>
 		
 		</main><!-- #main -->
 
