@@ -23,8 +23,8 @@
   .site-main-front-page {
         h2.entry-title {
           display: none;
-        } 
-  }
+       } 
+    }
 // ************ HEADER 
   // Main bar parent <header>
   .site-header {
@@ -39,18 +39,18 @@
     z-index: 999;
   }
   .header-logo {
-      height: 50px;
-      width: 50px;
-      background-image:url("../../images/logos/inhabitent-logo-tent.svg");
-      background-size: 100% 100%;
+    height: 50px;
+    width: 50px;
+    background-image:url("../../images/logos/inhabitent-logo-tent.svg");
+    background-size: 100% 100%;
   }
   nav span.dashicons {
-      color: $green;
-      font-size: 30px;
-     position: relative;
-     right: 20px;
-     top: 10px;
-    }
+    color: $green;
+    font-size: 30px;
+    position: relative;
+    right: 20px;
+    top: 10px;
+  }
   .main-navigation {
     padding-right: 60px;
     display: flex;
@@ -58,47 +58,47 @@
     justify-content: flex-end;
     height: 100%;   
       .search-icon { 
-        margin-left: 40px;
-        position: relative;   
-        bottom: 5px;
+          margin-left: 40px;
+          position: relative;   
+          bottom: 5px;
       }
       .search-field, .search-field1 {
-        background-color: white;
-        border: none;
-        margin-bottom: 10px;
-        position:relative;
-        bottom: 3px;
-        transition: 1s;
-        font-size: 16px;
-        width: 200px;
-        height: 28px;
+          background-color: white;
+          border: none;
+          margin-bottom: 10px;
+          position:relative;
+          bottom: 3px;
+          transition: 1s;
+          font-size: 16px;
+          width: 200px;
+          height: 28px;
       }
-       a 
-       { text-decoration: none;
-       color: $green;
-       font-size: 1.3rem;
-       padding-left: 35px;
-       padding-top: 12px;
-       position: relative;     
-       font-weight: 300;
-       font-size: 16px;
-       text-transform: uppercase;
+       a { 
+          text-decoration: none;
+          color: $green;
+          font-size: 1.3rem;
+          padding-left: 35px;
+          padding-top: 12px;
+          position: relative;     
+          font-weight: 300;
+          font-size: 16px;
+          text-transform: uppercase;
       } 
       h2.entry-title {
-        display: none;
+          display: none;
       }
       i {
-        font-size: 1.1rem;
-        color: $green;
-        position: relative;
-        bottom: 29px;
-        right: 40px;
+          font-size: 1.1rem;
+          color: $green;
+          position: relative;
+          bottom: 29px;
+          right: 40px;
       }
     }
 // ************ FOOTER
 
   footer {
-        height: 350px;    
+    height: 350px;    
     p {
       color: $white;
           }
@@ -120,7 +120,7 @@
       color: white;
       text-decoration: underline;
     }
-        }
+  }
     .footer-container {
       background-image:url("../../images/dark-wood@2x.png");
       min-width: 1120px;
@@ -161,52 +161,52 @@
   .site-about {
     padding-top: 20px;
      h2 {
-       color: $purple;
-      font-size: 2rem;
-      text-transform: uppercase;
-      text-align: center;
+        color: $purple;
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-align: center;
     } 
     .about-container {
-      width: 800px;
-      margin: 0 auto;
-      padding-top: 30px;
-      padding-bottom: 30px;
+        width: 800px;
+        margin: 0 auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
     .about-hero {
-      height: 100vh;
+        height: 100vh;
     }
     .about-title {
-      color: white;
-      text-transform: uppercase;
-      position: relative;
-      top: 200px;
-      font-size: 3rem;
+        color: white;
+        text-transform: uppercase;
+        position: relative;
+        top: 200px;
+        font-size: 3rem;
     }   
  }
 
 // ************ CONTACT 
   .primary-contact {
-  width: 1120px;  
+     width: 1120px;  
     }
     .site-content-contact{
       display: flex;
       flex-direction: columns;
       padding-top: 50px;
       margin-bottom: 60px;
-          #wpgmza_map {
+        #wpgmza_map {
             margin-bottom: 30px;
           }
-          input {
+        input {
             background-color: $light-grey;
             border-radius: 0px;
             border: 1px solid $medium-grey;
           }
-          textarea {
+        textarea {
             background-color: $light-grey;
             border-radius: 0px;
             border: 1px solid $medium-grey;
           }
-          .wpcf7-submit {
+        .wpcf7-submit {
             background-color: $green;
             color: white;
             text-shadow: none;
@@ -214,25 +214,25 @@
             text-transform: uppercase;
             padding: 12px;
           }
-          .wpcf7-submit:hover  {
+        .wpcf7-submit:hover  {
             background-color: $hovergreen;
             color: white;
             text-shadow: none;
             box-shadow: none;
             text-transform: uppercase;
           }
-              .contact-container {
-                text-align: left;
-                min-width: 880px;  
-                  h2.title {
-                    text-transform: uppercase;
-                    margin-left: 100px;
+        .contact-container {
+            text-align: left;
+            min-width: 880px;  
+              h2.title {
+                text-transform: uppercase;
+                margin-left: 100px;
                   }
-              .entry-content {
-                 width: 710px;
-                 margin: 0 auto;
-                  }    
-              }
+        .entry-content {
+            width: 710px;
+            margin: 0 auto;
+            }    
+        }
     form.wpcf7-form {
       p label {
        text-transform: uppercase;
@@ -246,8 +246,8 @@
     input {
       margin-top: 10px;
     }
-    }
-   }
+  }
+ }
     
 // ************ SIDEBAR
    // Primary sidebar container
@@ -259,40 +259,39 @@
     border-left: 1px solid $light-grey;
     display: block;
     padding-top: 20px;
-    .tent-biz-hours-class, .widget_archive {
-      position: relative;
-      bottom: 60px;
-    }
+      .tent-biz-hours-class, .widget_archive {
+        position: relative;
+        bottom: 60px;
+     }
     .div-of-week {
-      font-weight: bold;
+        font-weight: bold;
     }
     .address {
-      position: relative;
-      left: 40px;
-      bottom: 20px;
-    }
-      h2 {
-        letter-spacing: 2px;
-        font-size: 1.5rem;
-        color: #2f1339;
-      }
-        a {
-          color: $green;
-          text-decoration: none;
+        position: relative;
+        left: 40px;
+        bottom: 20px;
+     }
+     h2 {
+      letter-spacing: 2px;
+      font-size: 1.5rem;
+      color: #2f1339;
+       }
+      a {
+        color: $green;
+        text-decoration: none;
         }
-        li {
-          list-style: none;
+      li {
+        list-style: none;
         }
-        ul {
-          position: relative;
-          right: 90px;
+      ul {
+        position: relative;
+        right: 90px;
         } 
-        .dashicons {
-          font-size: 1.3rem;
-          margin-right: 20px;
-          
-        }
-  } 
+      .dashicons {
+        font-size: 1.3rem;
+        margin-right: 20px;        
+         }
+    } 
   // Archive 
    aside.widget_archive {
       display: block;
