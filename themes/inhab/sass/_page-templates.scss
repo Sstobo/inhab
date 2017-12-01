@@ -308,7 +308,7 @@
       bottom: 34px;
       font-family: $font-main;    
       text-align: left;  
- }
+    }
     .category-title ul {
       display: none;
     }
@@ -327,34 +327,26 @@
       border: none;
       background-color: $green;
     }  
-      .entry-header {
-        position: relative;
-            img {
-              margin-left: 100px;
-              width: 760px;
-            }
-            h2 {     
-              width: 400px;
-              background-color: #248A83;
-              font-size: 2rem;
-              position: absolute;
-              top: 10px;
-              left: 100px;
-              padding: 10px;
-                a {
-                  color: white;
-                  text-decoration: none;
-                }
-                 
-                }
-              }
-            }
-            // Blog content    
-       
-    
-    // Generated container name
-    .blog {
-        // Date info
+    .entry-header {
+      position: relative;
+        img {
+          margin-left: 100px;
+          width: 760px;
+          }
+        h2 {     
+          width: 400px;
+          background-color: #248A83;
+          font-size: 2rem;
+          position: absolute;
+          top: 10px;
+          left: 100px;
+          padding: 10px;
+        a {
+          color: white;
+          text-decoration: none;
+          }                 
+       }
+    }
       .entry-meta {
         background-color: #248A83;
         position: relative;
@@ -364,19 +356,17 @@
         color: white;
         padding: 3px;
       }
-          .site-content {
-            display: flex;
-            flex-direction: row;
-            padding-top: 50px;
-            margin-bottom: 60px;       
+      .site-content {
+        display: flex;
+        flex-direction: row;
+        padding-top: 50px;
+        margin-bottom: 60px;       
       } 
       .site-main {
         padding-top: 40px;
         width: 890px;
       }
-  
     }
-    // Content wrapper
         
 // ************ FRONT PAGE CONTENT 
    .product-info  {
@@ -385,50 +375,50 @@
       display: flex;
       flex-direction: row;
       justify-content:center;
-      .product-type-blocks {
+        .product-type-blocks {
+          display: flex;
+          flex-direction: row;
+          justify-content:center;
+        }
+       .product-type-block-wrapper:hover {
+          border: 1px solid $orange;
+          border-top: 5px solid $orange;
+        }
+      .product-type-block-wrapper {
+        margin: 12px;
+        height: 265px;
+        width: 265px;
+        background-color: white;
+        border: 1px solid $light-grey;
+        border-top: 5px solid $light-grey;
         display: flex;
-        flex-direction: row;
-        justify-content:center;
-      }
-      .product-type-block-wrapper:hover {
-        border: 1px solid $orange;
-        border-top: 5px solid $orange;
-      }
-    .product-type-block-wrapper {
-      margin: 12px;
-      height: 265px;
-      width: 265px;
-      background-color: white;
-      border: 1px solid $light-grey;
-      border-top: 5px solid $light-grey;
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      justify-content: center;
-      text-align: center;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
           img {
             margin: 0 auto;
             height: 70px;
             width: 70px;
             padding-top: 10px;
           }
-            a.btn {
-              text-transform: uppercase;
-              color: white;
-              background-color: $green;
-              width: 100px;
-              height: 50px;
-              padding: 12px 24px 12px 24px;
-              text-decoration: none;
-              font-size: 14px;
+          a.btn {
+            text-transform: uppercase;
+            color: white;
+            background-color: $green;
+            width: 100px;
+            height: 50px;
+            padding: 12px 24px 12px 24px;
+            text-decoration: none;
+            font-size: 14px;
             }
-            a.btn:hover {
-              background-color: #19625d;              
+          a.btn:hover {
+            background-color: #19625d;              
             }
-            p {
-              padding: 0 10px 0 10px;
+          p {
+            padding: 0 10px 0 10px;
             }
-            }
+       }
     }
 
 
