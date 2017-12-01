@@ -8,6 +8,8 @@
 <?php get_header();?>	
 	
 	<div id="primary" class="site-content">
+
+
 		<main id="main" class="site-main" role="main">
 
 			<h1 class="category-title"><?php the_archive_title();?></h1>
@@ -22,12 +24,12 @@
 
 				</header>
 
-					<?php endif; ?>		
-					<?php /* Start the Loop */ ?>
-					<?php while ( have_posts() ) : the_post(); ?>
-						<?php get_template_part( 'template-parts/content' ); ?>
+			<?php endif; ?>		
+				<?php /* Start the Loop */ ?>
+			<?php while ( have_posts() ) : the_post(); ?>
+				<?php get_template_part( 'template-parts/content' ); ?>
 
-							<a href="<?php the_permalink(); ?>" class="button">Read More<span class="dashicons dashicons-arrow-right-alt next-arrow"></span></a>
+				<a href="<?php the_permalink(); ?>" class="button">Read More<span class="dashicons dashicons-arrow-right-alt next-arrow"></span></a>
 
 			<?php endwhile; ?>	
 				<?php the_posts_navigation(); ?>			

@@ -16,10 +16,12 @@ get_header(); ?>
 						<div class="contact-content">	<?php get_template_part( 'template-parts/content', 'page' ); ?>
 					</div>
 				</div>
+
 						<?php get_sidebar(); ?>	
-						<?php endwhile; // End of the loop. ?>
+						<?php endwhile;  ?>
+
 			</div>
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</main>
+	</div>
 
 <?php get_footer(); ?>
