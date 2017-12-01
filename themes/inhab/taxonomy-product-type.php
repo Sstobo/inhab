@@ -4,23 +4,24 @@
  *
  * @package RED_Starter_Theme
  */
-
 get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		<h1> <?php single_term_title(); ?> </h1>
-								
-								<div class="page-description"><?php the_archive_description();?></define_syslog_variables>
-		
+
+			<h1> <?php single_term_title(); ?> </h1>				
+				<div class="page-description"><?php the_archive_description();?></define_syslog_variables>
+	
 		</main><!-- #main -->
 
 		<div class="product-wrapper">
 					
-								<?php while ( have_posts() ) : the_post(); ?>				
+				<?php while ( have_posts() ) : the_post(); ?>				
 
 				<div class="product-block">
+
 							<a href="<?php the_permalink(); ?>">	<?php the_post_thumbnail(); ?></a></br>
+
 				<div class="content-block">
 							<span class="archive-item"><?php the_title()  ?> </span><span class="archive-dots">........................</span><span class="price-meta"> 
 							<?php
@@ -28,9 +29,9 @@ get_header(); ?>
 								echo($meta_print_value);
 							?></span>
 				</div> 
-				</div>
+		</div>
 																									
-							 <?php endwhile; ?>
+					<?php endwhile; ?>
 															
 			</div>	
 		</div>

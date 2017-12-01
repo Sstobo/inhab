@@ -29,11 +29,7 @@ get_header(); ?>
       if ( comments_open() || get_comments_number() ) :
           comments_template();
       endif; ?>
-
-				
-</main><!-- #main -->
-
-</div>
-</div><!-- #primary -->
+		
+	</main>
 </div>
 <?php get_footer(); ?>
